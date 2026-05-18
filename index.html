@@ -1263,12 +1263,15 @@ const wikiImages = {
 
 const imgCache = {};
 
-function getImageUrl(bandId) {
-  const wikiFile = wikiImages[bandId];
-  if (!wikiFile) return null;
-  // Use Wikipedia's thumbnail API
-  const encoded = encodeURIComponent(wikiFile.replace(/ /g,'_'));
-  return `https://en.wikipedia.org/wiki/Special:FilePath/${encoded}?width=400`;
+async function fetchWikiImageUrl(wikiFile) {
+  const title = 'File:' + wikiFile.replace(/ /g,'_');
+  const api = 'https://en.wikipedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url&iiurlwidth=400&format=json&origin=*&titles='
+    + encodeURIComponent(title);
+  const res = await fetch(api);
+  const data = await res.json();
+  const pages = data.query.pages;
+  const page = Object.values(pages)[0];
+  return page?.imageinfo?.[0]?.thumburl || null;
 }
 
 function loadImg(img, bandId, onLoad) {
@@ -1277,15 +1280,15 @@ function loadImg(img, bandId, onLoad) {
     img.onload = () => { img.classList.add('loaded'); if(onLoad) onLoad(); };
     return;
   }
-  const url = getImageUrl(bandId);
-  if (!url) return;
-  img.src = url;
-  img.onload = () => {
+  const wikiFile = wikiImages[bandId];
+  if (!wikiFile) return;
+  fetchWikiImageUrl(wikiFile).then(url => {
+    if (!url) return;
     imgCache[bandId] = url;
-    img.classList.add('loaded');
-    if(onLoad) onLoad();
-  };
-  img.onerror = () => { img.style.display='none'; };
+    img.src = url;
+    img.onload = () => { img.classList.add('loaded'); if(onLoad) onLoad(); };
+    img.onerror = () => { img.style.display='none'; };
+  }).catch(() => {});
 }
 
 function spotifyUrl(q) {
