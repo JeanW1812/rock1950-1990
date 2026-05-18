@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rock Lineage — 搖滾脈絡圖 1955–1999</title>
+<meta name="description" content="英美搖滾脈絡圖 1955–1999 — 一張 liner-notes 風格的視覺地圖，串起 52 個樂團、14 個流派、近半世紀的搖滾史。">
+
+<!-- Open Graph (Facebook / LINE / Discord / Slack / Threads) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rock Lineage — 搖滾脈絡圖 1955–1999">
+<meta property="og:description" content="英美搖滾脈絡圖 1955–1999 — 一張 liner-notes 風格的視覺地圖，串起 52 個樂團、14 個流派、近半世紀的搖滾史。">
+<meta property="og:image" content="og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Rock Lineage 縮圖 — 冷調 liner-notes 風格的搖滾脈絡圖">
+<meta property="og:locale" content="zh_TW">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rock Lineage — 搖滾脈絡圖 1955–1999">
+<meta name="twitter:description" content="英美搖滾脈絡圖 1955–1999 — 52 個樂團、14 個流派、近半世紀的搖滾史。">
+<meta name="twitter:image" content="og-image.png">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Oswald:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* paper — cool, hazy ivory */
+  --paper:#e3e5e0;
+  --paper-l:#ecedea;
+  --paper-d:#cbcec7;
+  --paper-warm:#d9d8cf;
+
+  /* ink scale */
+  --ink:#1c252b;
+  --ink-2:#34424a;
+  --ink-3:#5b6970;
+  --muted:#8a949b;
+  --muted-2:#a8afb3;
+
+  /* hairlines */
+  --rule:rgba(28,37,43,.18);
+  --rule-2:rgba(28,37,43,.42);
+  --rule-3:rgba(28,37,43,.7);
+
+  /* cool accents (+ one warm punctuation) */
+  --teal:#3a5b5f;
+  --slate-blue:#4a6677;
+  --sage:#5c6a59;
+  --brass:#8e7a44;
+  --rust:#8a4530;
+
+  --font-display:'Playfair Display','Noto Serif TC','Lora',serif;
+  --font-body:'Lora','Noto Serif TC',serif;
+  --font-mono:'Courier Prime','Noto Sans TC',monospace;
+
+  /* legacy aliases so existing script colour refs still resolve */
+  --bg:var(--paper);
+  --text:var(--ink);
+  --text2:var(--ink-2);
+  --accent:var(--teal);
+  --red:var(--rust);
+  --red2:var(--rust);
+  --green:var(--sage);
+  --blue:var(--slate-blue);
+  --purple:#6a4b6e;
+  --accent2:var(--brass);
+  --border:var(--rule);
+  --border2:var(--rule-2);
+  --kraft:var(--paper);
+  --cream:var(--paper-l);
+  --cream-l:var(--paper-l);
+  --cream-d:var(--paper-d);
+  --aged:var(--paper-warm);
+  --oxblood:var(--rust);
+  --rust-c:var(--rust);
+  --mustard:var(--brass);
+  --olive:var(--sage);
+  --denim:var(--slate-blue);
+  --ink-faded:var(--muted);
+  --ink-soft:var(--ink-2);
+  --tape:rgba(74,102,119,.18);
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html,body{height:100%;overflow:hidden;}
+body{
+  background:var(--paper);
+  background-image:
+    radial-gradient(ellipse 900px 700px at 18% 8%, rgba(74,102,119,.07), transparent 70%),
+    radial-gradient(ellipse 700px 900px at 82% 92%, rgba(28,37,43,.06), transparent 70%);
+  color:var(--ink);
+  font-family:var(--font-body);
+  font-size:16px;
+  font-weight:400;
+  display:flex;flex-direction:column;position:relative;
+}
+/* hazy paper grain */
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:1;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.11  0 0 0 0 0.15  0 0 0 0 0.17  0 0 0 0.32 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity:.42;mix-blend-mode:multiply;
+}
+/* page edge soft vignette */
+body::after{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:1;
+  background:
+    linear-gradient(to right, rgba(28,37,43,.07), transparent 7%, transparent 93%, rgba(28,37,43,.07)),
+    linear-gradient(to bottom, rgba(28,37,43,.05), transparent 5%, transparent 95%, rgba(28,37,43,.05));
+}
+
+/* hide kraft collage decorations */
+.bg-deco{display:none !important;}
+
+/* ── HEADER (book frontmatter) ── */
+header{
+  flex-shrink:0;
+  padding:1.5rem 2.2rem 1rem;
+  display:flex;align-items:flex-end;gap:1.6rem;
+  position:relative;z-index:10;
+  background:transparent;
+  border-bottom:1px solid var(--rule-3);
+}
+header::after{
+  content:'';position:absolute;left:2.2rem;right:2.2rem;bottom:-5px;
+  height:1px;background:var(--rule);
+}
+.header-brand{display:flex;align-items:flex-end;gap:1.2rem;position:relative;}
+.title-wrap{
+  position:relative;background:none;padding:0;
+  transform:none;box-shadow:none;
+}
+.title-wrap::before{display:none;}
+h1{
+  font-family:var(--font-display);
+  font-weight:700;font-style:italic;
+  font-size:2.7rem;
+  line-height:.95;
+  letter-spacing:-.012em;
+  color:var(--ink);
+  text-shadow:none;text-transform:none;
+  white-space:nowrap;
+}
+/* typographic mark instead of spinning vinyl */
+.header-vinyl{
+  width:auto;height:auto;border-radius:0;
+  background:none;box-shadow:none;animation:none;
+  font-family:var(--font-display);font-style:italic;
+  font-size:1.6rem;color:var(--rust);
+  align-self:flex-end;margin:0 0 .55rem 0;
+  display:flex;align-items:flex-end;line-height:1;
+}
+.header-vinyl::after{
+  content:'⁂';
+  position:static;inset:auto;background:none;
+  width:auto;height:auto;border-radius:0;
+  display:block;
+}
+@keyframes spin{to{transform:rotate(360deg);}}
+.header-sub{
+  font-family:var(--font-body);
+  font-style:italic;font-weight:400;
+  font-size:.98rem;
+  color:var(--ink-3);
+  line-height:1.3;
+  transform:none;padding:0;
+  letter-spacing:.005em;
+  align-self:flex-end;margin-bottom:.42rem;
+  white-space:nowrap;
+}
+.header-sub::before{display:none;}
+.header-sub .sub-line2{
+  font-family:var(--font-mono);font-size:.6rem;
+  color:var(--muted);letter-spacing:.25em;text-transform:uppercase;
+  font-style:normal;display:block;margin-top:.4rem;
+}
+
+/* view toggle — refined small-caps tabs */
+.view-toggle{
+  margin-left:auto;display:flex;gap:0;
+  align-items:flex-end;padding-bottom:.5rem;
+}
+.vt-btn{
+  font-family:var(--font-mono);font-weight:400;
+  font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;
+  padding:.55rem 1.05rem .5rem;
+  background:transparent;color:var(--ink-3);
+  border:1px solid var(--rule-2);border-right:none;
+  cursor:pointer;transition:all .12s;
+  transform:none;box-shadow:none;white-space:nowrap;
+}
+.vt-btn:last-child{border-right:1px solid var(--rule-2);}
+.vt-btn:hover{color:var(--ink);background:var(--paper-l);transform:none;}
+.vt-btn:nth-child(2):hover{transform:none;}
+.vt-btn.active{background:var(--ink);color:var(--paper-l);border-color:var(--ink);}
+
+/* ── GENRE BAR ── */
+.genre-bar{
+  flex-shrink:0;
+  display:flex;gap:0;align-items:center;
+  padding:.85rem 2.2rem .9rem;
+  overflow-x:auto;scrollbar-width:none;
+  position:relative;z-index:9;
+  border-bottom:1px solid var(--rule);
+  background:transparent;
+}
+.genre-bar::-webkit-scrollbar{display:none;}
+.genre-bar::before{display:none;}
+.genre-label{
+  font-family:var(--font-mono);font-size:.56rem;font-weight:400;
+  letter-spacing:.3em;text-transform:uppercase;
+  color:var(--muted);background:transparent;
+  padding:0;margin-right:1.2rem;
+  transform:none;box-shadow:none;white-space:nowrap;
+}
+.gp{
+  font-family:var(--font-mono);font-weight:400;
+  font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;
+  padding:.34rem .85rem;
+  background:transparent;color:var(--ink-3);
+  border:none;border-right:1px solid var(--rule);
+  cursor:pointer;white-space:nowrap;
+  transition:all .12s;transform:none;box-shadow:none;
+}
+.gp:nth-child(odd),.gp:nth-child(even),.gp:nth-child(3n){transform:none;}
+.gp:hover{color:var(--ink);background:var(--paper-l);}
+.gp.active{
+  color:var(--paper-l);background:var(--teal);
+  box-shadow:none;
+}
+
+/* ── VIEWS ── */
+.view{display:none;flex:1;overflow:hidden;position:relative;z-index:5;}
+.view.active{display:flex;}
+
+#view-timeline{display:none;}
+#view-timeline.active{
+  display:grid;
+  grid-template-columns:1fr 460px;
+  gap:0;padding:0;
+}
+
+.tl-scroll{
+  overflow-y:auto;overflow-x:hidden;
+  scrollbar-width:thin;scrollbar-color:var(--muted) transparent;
+  padding:0 2.2rem 4rem;
+  position:relative;
+  border-right:1px solid var(--rule-2);
+}
+
+.decade-block{margin:2.6rem 0 1rem;position:relative;}
+.decade-block:first-child{margin-top:1.3rem;}
+
+.yr-label{
+  position:sticky;top:0;z-index:8;
+  background:var(--paper);
+  padding:1.05rem 0 1.15rem;
+  display:flex;align-items:baseline;justify-content:center;
+  gap:1.6rem;margin:0 0 .8rem;
+  border-bottom:1px solid var(--rule-3);
+}
+.yr-label::before{
+  content:'';position:absolute;left:0;right:0;bottom:-4px;
+  height:1px;background:var(--rule);z-index:-1;
+}
+.yr-headline{
+  font-family:var(--font-display);
+  font-weight:700;font-style:italic;
+  font-size:3.6rem;
+  color:var(--ink);
+  line-height:.9;letter-spacing:-.018em;
+  transform:none;position:relative;
+}
+.yr-headline::after{display:none;}
+.yr-stamp{
+  font-family:var(--font-mono);font-size:.6rem;font-weight:400;
+  color:var(--muted);background:transparent;
+  padding:0;letter-spacing:.22em;text-transform:uppercase;
+  transform:none;box-shadow:none;
+  align-self:baseline;margin:0;
+}
+
+/* BAND ROW — TOC entry */
+.band-row{
+  display:flex;align-items:center;gap:1rem;
+  padding:.95rem .65rem .95rem .35rem;
+  cursor:pointer;margin:0;
+  background:transparent;background-image:none;
+  box-shadow:none;position:relative;transform:none;
+  border-left:none;
+  border-bottom:1px solid var(--rule);
+  transition:background .12s,color .12s;
+}
+.band-row:nth-child(3n),.band-row:nth-child(3n+1),.band-row:nth-child(5n){
+  transform:none;background:transparent;background-color:transparent;
+}
+.band-row:hover{background:var(--paper-l);transform:none;box-shadow:none;}
+.band-row.selected{
+  background:var(--paper-l);transform:none;
+  box-shadow:inset 3px 0 0 var(--teal);
+  border-bottom-color:var(--rule-2);
+}
+.band-row.selected::before{display:none;}
+
+.b-num{
+  font-family:var(--font-mono);font-weight:400;
+  font-size:.72rem;letter-spacing:.1em;
+  color:var(--muted);
+  width:2.4rem;text-align:right;flex-shrink:0;line-height:1;
+}
+.b-thumb{
+  width:46px;height:46px;flex-shrink:0;
+  background:var(--paper-d);overflow:hidden;position:relative;
+  box-shadow:none;border:1px solid var(--rule-2);transform:none;
+}
+.b-thumb img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  opacity:0;transition:opacity .3s;
+  filter:grayscale(1) contrast(1.05);
+}
+.b-thumb img.loaded{opacity:.92;}
+.b-thumb-ph{
+  position:absolute;inset:0;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-display);font-style:italic;font-weight:700;
+  font-size:1.15rem;color:var(--ink-3);letter-spacing:-.01em;
+}
+.band-row.selected .b-thumb{border-color:var(--teal);box-shadow:none;}
+
+.b-info{flex:1;min-width:0;}
+.b-name{
+  font-family:var(--font-display);
+  font-weight:700;font-style:italic;
+  font-size:1.4rem;text-transform:none;
+  letter-spacing:-.008em;color:var(--ink);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  line-height:1.05;
+}
+.band-row.selected .b-name{color:var(--teal);}
+.b-meta{
+  font-family:var(--font-mono);font-size:.62rem;
+  color:var(--muted);letter-spacing:.08em;
+  margin-top:5px;font-style:normal;
+}
+
+.b-right{display:flex;align-items:center;gap:.65rem;flex-shrink:0;}
+.gtag{
+  font-family:var(--font-mono);font-weight:400;
+  font-size:.52rem;letter-spacing:.18em;text-transform:uppercase;
+  padding:.27rem .6rem;
+  border:1px solid var(--rule-2);background:transparent;color:var(--ink-3);
+  transform:none;box-shadow:none;white-space:nowrap;
+}
+.cbadge{
+  font-family:var(--font-mono);font-weight:400;
+  font-size:.65rem;
+  width:auto;height:auto;min-width:1.8rem;
+  padding:.27rem .5rem;
+  background:transparent;color:var(--rust);
+  border:1px solid var(--rust);border-radius:0;
+  display:flex;align-items:center;justify-content:center;
+  transform:none;box-shadow:none;letter-spacing:.05em;
+  line-height:1;
+}
+
+/* ── DETAIL PANEL — like an essay spread ── */
+.detail-panel{
+  overflow-y:auto;overflow-x:hidden;
+  scrollbar-width:thin;scrollbar-color:var(--muted) transparent;
+  padding:0;position:relative;
+  background:var(--paper-l);
+}
+.empty-state{
+  display:flex;flex-direction:column;align-items:center;
+  justify-content:center;height:100%;
+  text-align:center;padding:3rem 2rem;gap:1.6rem;
+  position:relative;
+}
+.empty-vinyl{
+  width:64px;height:64px;border-radius:50%;
+  background:transparent;border:1px solid var(--rule-2);
+  box-shadow:none;animation:none;position:relative;
+}
+.empty-vinyl::after{
+  content:'';position:absolute;inset:46%;border-radius:50%;
+  background:var(--rule-2);box-shadow:none;
+}
+.empty-state p{
+  font-family:var(--font-display);
+  font-style:italic;font-weight:400;
+  font-size:1.15rem;line-height:1.55;
+  color:var(--ink-3);transform:none;letter-spacing:0;
+  max-width:260px;
+}
+.empty-state .ph-mono{
+  font-family:var(--font-mono);font-size:.55rem;
+  letter-spacing:.28em;text-transform:uppercase;
+  color:var(--muted);transform:none;margin-top:.2rem;
+}
+
+.dc{display:none;}
+.dc.vis{display:block;}
+
+/* DETAIL HEADER — chapter opening */
+.dh{
+  position:relative;
+  background:transparent;background-image:none;
+  padding:1.8rem 2.2rem 1.5rem;
+  margin:0;transform:none;box-shadow:none;
+  overflow:hidden;
+  border-bottom:1px solid var(--rule-2);
+}
+.dh::after{display:none;}
+.dh-bg{
+  position:absolute;right:-1.5rem;top:.5rem;
+  font-family:var(--font-display);
+  font-weight:700;font-style:italic;
+  font-size:9rem;color:var(--rule);
+  white-space:nowrap;line-height:1;
+  pointer-events:none;user-select:none;
+  letter-spacing:-.03em;
+  max-width:75%;overflow:hidden;
+}
+
+.d-cover{
+  width:100%;aspect-ratio:3/2;
+  background:var(--paper-d);overflow:hidden;position:relative;
+  margin:0;box-shadow:none;
+  border-bottom:1px solid var(--rule-2);
+  display:block;
+}
+.d-cover img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  opacity:0;transition:opacity .5s;
+  filter:grayscale(.85) contrast(1.05) brightness(.96);
+}
+.d-cover img.loaded{opacity:.95;}
+.d-cover-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg, transparent 55%, rgba(28,37,43,.22) 100%);
+}
+.d-cover-ph{
+  position:absolute;inset:0;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-display);font-style:italic;
+  font-size:3rem;color:var(--muted);
+  letter-spacing:-.015em;opacity:.55;
+}
+.d-cover-stamp{
+  position:absolute;bottom:10px;right:10px;
+  font-family:var(--font-mono);font-size:.5rem;
+  background:rgba(28,37,43,.78);color:var(--paper-l);
+  padding:.22rem .55rem;letter-spacing:.22em;text-transform:uppercase;
+  transform:none;z-index:2;box-shadow:none;
+}
+
+.dg-tag{
+  display:inline-block;
+  font-family:var(--font-mono);
+  font-size:.6rem;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--rust);background:transparent;
+  padding:0 0 .35rem 0;margin-bottom:.45rem;
+  transform:none;box-shadow:none;
+  border-bottom:1px solid var(--rust);
+}
+.d-name{
+  font-family:var(--font-display);
+  font-weight:700;font-style:italic;
+  text-transform:none;
+  font-size:2.5rem;line-height:1;
+  letter-spacing:-.018em;
+  color:var(--ink);
+  margin:.5rem 0 .55rem;position:relative;
+}
+.d-years{
+  font-family:var(--font-mono);font-weight:400;
+  font-size:.7rem;color:var(--ink-3);
+  display:flex;align-items:center;gap:.45rem;line-height:1;
+  margin:.65rem 0 0;letter-spacing:.16em;text-transform:uppercase;
+}
+.d-years .span-dot{color:var(--rust);font-weight:400;}
+.d-origin{
+  font-family:var(--font-body);font-style:italic;
+  font-size:.85rem;color:var(--muted);
+  margin-top:.45rem;letter-spacing:.01em;
+}
+
+/* DETAIL SECTIONS */
+.ds{
+  background:transparent;background-image:none;
+  padding:1.5rem 2.2rem 1.7rem;
+  margin:0;transform:none;box-shadow:none;
+  border-bottom:1px solid var(--rule);
+}
+.ds:nth-of-type(n){transform:none;background:transparent;background-color:transparent;}
+.ds:last-child{border-bottom:none;}
+
+.ds-label{
+  font-family:var(--font-mono);font-weight:400;
+  font-size:.58rem;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:1rem;
+  display:flex;align-items:center;gap:.75rem;
+}
+.ds-label::before{
+  content:'';width:10px;height:1px;
+  background:var(--ink-3);
+  transform:none;box-shadow:none;border-radius:0;flex-shrink:0;
+}
+.ds-label::after{
+  content:'';flex:1;height:1px;background:var(--rule);opacity:1;
+}
+
+/* BIO — drop cap */
+.d-bio{
+  font-family:var(--font-body);
+  font-size:.93rem;line-height:1.78;
+  color:var(--ink-2);letter-spacing:.003em;
+  text-align:justify;hyphens:auto;
+  font-weight:400;
+}
+.d-bio .dc-first{
+  font-family:var(--font-display);
+  font-weight:700;font-style:italic;
+  font-size:3.5rem;
+  float:left;line-height:.82;
+  padding:.16rem .6rem .05rem 0;
+  color:var(--rust);
+}
+
+/* SONGS */
+.songs-list{display:flex;flex-direction:column;}
+.si{
+  display:flex;align-items:baseline;gap:.7rem;
+  font-family:var(--font-body);font-size:.9rem;
+  padding:.55rem 0;
+  border-bottom:1px dotted var(--rule-2);
+}
+.si:last-child{border-bottom:none;}
+.sn{
+  font-family:var(--font-mono);font-weight:400;
+  color:var(--muted);
+  width:1.6rem;text-align:right;flex-shrink:0;
+  font-size:.65rem;line-height:1.2;letter-spacing:.05em;
+}
+.sy{
+  font-family:var(--font-mono);
+  color:var(--ink-3);flex-shrink:0;
+  min-width:2.9rem;font-size:.62rem;letter-spacing:.12em;
+}
+.st{flex:1;color:var(--ink);font-style:italic;font-weight:400;}
+.spot-link{
+  margin-left:auto;flex-shrink:0;
+  font-family:var(--font-mono);font-weight:400;
+  color:var(--sage);text-decoration:none;background:transparent;
+  font-size:.5rem;letter-spacing:.24em;text-transform:uppercase;
+  padding:.22rem .55rem;
+  border:1px solid currentColor;
+  transition:all .12s;
+  transform:none;box-shadow:none;
+}
+.spot-link:hover{
+  background:var(--sage);color:var(--paper-l);border-color:var(--sage);
+}
+
+/* MEMBERS */
+.members-list{display:flex;flex-direction:column;gap:0;}
+.mi{
+  display:flex;justify-content:space-between;align-items:baseline;
+  gap:.6rem;padding:.48rem 0;
+  border-bottom:1px dotted var(--rule);
+}
+.mi:last-child{border-bottom:none;}
+.mn{
+  font-family:var(--font-display);
+  font-weight:400;font-style:italic;
+  font-size:1.1rem;text-transform:none;
+  letter-spacing:-.005em;color:var(--ink);
+}
+.mr{
+  font-family:var(--font-mono);font-style:normal;
+  font-size:.68rem;color:var(--muted);
+  text-align:right;flex-shrink:0;letter-spacing:.06em;
+}
+
+/* CONNECTIONS */
+.conns-list{display:flex;flex-direction:column;gap:0;}
+.ci{
+  padding:.95rem 1rem .95rem 1.2rem;
+  background:var(--paper);
+  cursor:pointer;transition:all .12s;
+  position:relative;
+  border:1px solid var(--rule);border-left:3px solid var(--rule-2);
+  margin-bottom:.55rem;
+  transform:none;box-shadow:none;
+}
+.ci:nth-child(odd),.ci:nth-child(even){transform:none;}
+.ci:hover{
+  background:var(--paper-l);
+  border-left-color:var(--teal);transform:none;
+}
+.ci-type{
+  display:inline-block;
+  font-family:var(--font-mono);font-weight:400;
+  font-size:.5rem;letter-spacing:.22em;text-transform:uppercase;
+  padding:.16rem .5rem;
+  background:transparent;color:var(--ink-3);
+  border:1px solid var(--rule-2);margin-bottom:.5rem;
+}
+.ci-type.shared-member{color:var(--rust);border-color:var(--rust);}
+.ci-type.shared-writer{color:var(--brass);border-color:var(--brass);}
+.ci-type.influenced{color:var(--sage);border-color:var(--sage);}
+.ci-type.scene{color:var(--slate-blue);border-color:var(--slate-blue);}
+.ci-band{
+  font-family:var(--font-display);
+  font-weight:700;font-style:italic;
+  font-size:1.2rem;text-transform:none;
+  letter-spacing:-.008em;
+  margin-bottom:.3rem;color:var(--ink);line-height:1.15;
+}
+.ci-reason{
+  font-family:var(--font-body);font-size:.8rem;
+  color:var(--ink-3);line-height:1.62;font-style:normal;
+}
+
+/* ── GRAPH VIEW ── */
+#view-graph{display:none;}
+#view-graph.active{display:flex;flex-direction:column;padding:0;}
+.graph-paper{
+  flex:1;position:relative;
+  background:var(--paper);
+  background-image:
+    linear-gradient(rgba(28,37,43,.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(28,37,43,.045) 1px, transparent 1px);
+  background-size:48px 48px;
+  background-blend-mode:normal;
+  margin:0;box-shadow:none;overflow:hidden;
+  border-top:1px solid var(--rule);
+}
+.graph-paper::before{display:none;}
+.graph-paper::after{display:none;}
+#graph-canvas{width:100%;height:100%;display:block;}
+
+.graph-legend{
+  position:absolute;bottom:1.3rem;left:1.3rem;
+  background:var(--paper-l);
+  border:1px solid var(--rule-2);
+  padding:.95rem 1.15rem 1rem;
+  display:flex;flex-direction:column;gap:.5rem;
+  transform:none;box-shadow:none;
+}
+.graph-legend::before{
+  content:'LEGEND · 圖例';
+  font-family:var(--font-mono);font-weight:400;
+  font-size:.56rem;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--muted);
+  border-bottom:1px solid var(--rule);
+  padding-bottom:.4rem;margin-bottom:.4rem;
+}
+.gl-item{
+  display:flex;align-items:center;gap:.7rem;
+  font-family:var(--font-body);font-size:.8rem;
+  color:var(--ink-2);font-style:italic;
+}
+.gl-line{width:28px;height:1.5px;flex-shrink:0;}
+
+.graph-tooltip{
+  position:absolute;
+  background:var(--paper-l);
+  border:1px solid var(--rule-2);
+  padding:.75rem 1rem;
+  font-family:var(--font-body);font-size:.8rem;
+  color:var(--ink-2);line-height:1.55;
+  pointer-events:none;display:none;
+  max-width:260px;z-index:100;
+  transform:none;box-shadow:none;
+  border-left:3px solid var(--teal);
+  font-style:italic;
+}
+.graph-tooltip strong{
+  font-family:var(--font-display);
+  font-weight:700;font-style:italic;
+  text-transform:none;letter-spacing:-.008em;
+  color:var(--ink);font-size:1.1rem;
+  display:block;margin-bottom:.25rem;line-height:1.15;
+}
+
+.graph-controls{
+  position:absolute;top:1.3rem;right:1.3rem;
+  display:flex;flex-direction:row;gap:0;
+}
+.gc-btn{
+  font-family:var(--font-mono);font-weight:400;
+  font-size:.58rem;
+  padding:.5rem .95rem .45rem;
+  letter-spacing:.24em;text-transform:uppercase;
+  border:1px solid var(--rule-2);border-right:none;
+  background:var(--paper-l);color:var(--ink-3);
+  cursor:pointer;transition:all .12s;
+  transform:none;box-shadow:none;
+}
+.gc-btn:nth-child(2){transform:none;}
+.gc-btn:last-child{border-right:1px solid var(--rule-2);}
+.gc-btn:hover{background:var(--ink);color:var(--paper-l);border-color:var(--ink);}
+
+.graph-info{
+  position:absolute;top:1.3rem;left:1.3rem;
+  background:transparent;padding:0;
+  font-family:var(--font-mono);font-weight:400;
+  font-size:.56rem;text-transform:uppercase;letter-spacing:.28em;
+  color:var(--muted);transform:none;box-shadow:none;
+  line-height:1;
+}
+
+/* ── MOBILE SHEET ── */
+.mobile-sheet{
+  display:none;position:fixed;bottom:0;left:0;right:0;
+  background:var(--paper);
+  z-index:300;max-height:85vh;overflow-y:auto;
+  transform:translateY(100%);transition:transform .3s ease;
+  box-shadow:0 -8px 24px rgba(28,37,43,.18);
+  border-top:1px solid var(--rule-2);
+}
+.mobile-sheet.open{transform:translateY(0);}
+.sheet-handle{
+  width:50px;height:3px;background:var(--rule-2);
+  margin:.7rem auto .3rem;border-radius:2px;
+}
+.sheet-close{
+  position:absolute;top:.6rem;right:1rem;
+  font-family:var(--font-mono);font-weight:400;
+  font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--ink-3);background:transparent;
+  cursor:pointer;border:1px solid var(--rule-2);
+  padding:.32rem .65rem;
+  transform:none;box-shadow:none;
+}
+
+::-webkit-scrollbar{width:6px;height:6px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--muted);border-radius:0;}
+::-webkit-scrollbar-thumb:hover{background:var(--ink-3);}
+
+@media(max-width:760px){
+  html,body{overflow:hidden;}
+  header{padding:.85rem 1.1rem .7rem;gap:.85rem;}
+  h1{font-size:1.85rem;}
+  .header-sub{font-size:.85rem;}
+  .header-sub .sub-line2{display:none;}
+  .header-vinyl{display:none;}
+  .vt-btn{padding:.4rem .7rem;font-size:.55rem;}
+  .genre-bar{padding:.55rem 1.1rem;}
+  #view-timeline.active{grid-template-columns:1fr;overflow:hidden;padding:0;}
+  .tl-scroll{padding:0 1.2rem 4rem;border-right:none;}
+  .detail-panel{display:none;}
+  .mobile-sheet{display:block;}
+  .yr-headline{font-size:2.5rem;}
+  .dh{padding:1.5rem 1.2rem;}
+  .ds{padding:1.3rem 1.2rem;}
+}
+
+</style>
+</head>
+<body>
+
+<!-- fixed background collage decorations -->
+<div class="bg-deco" aria-hidden="true">
+  <div class="vinyl v1"></div>
+  <div class="vinyl v2"></div>
+  <div class="paper-scrap s1"></div>
+  <div class="paper-scrap s2"></div>
+</div>
+
+<header>
+  <div class="header-brand">
+    <div class="title-wrap"><h1>ROCK LINEAGE</h1></div>
+    <div class="header-vinyl" aria-hidden="true"></div>
+    <div class="header-sub">
+      英美搖滾脈絡圖
+      <span class="sub-line2">1955 – 1999 · A LINER-NOTES FIELD GUIDE</span>
+    </div>
+  </div>
+  <div class="view-toggle">
+    <button class="vt-btn active" data-view="timeline">時間軸</button>
+    <button class="vt-btn" data-view="graph">關係圖</button>
+  </div>
+</header>
+
+<div class="genre-bar" id="genreBar">
+  <span class="genre-label">流派</span>
+  <button class="gp active" data-genre="all">全部</button>
+  <button class="gp" data-genre="Rock and Roll">Rock & Roll</button>
+  <button class="gp" data-genre="British Invasion">British Invasion</button>
+  <button class="gp" data-genre="Folk Rock">Folk Rock</button>
+  <button class="gp" data-genre="Country Rock">Country Rock</button>
+  <button class="gp" data-genre="Hard Rock">Hard Rock</button>
+  <button class="gp" data-genre="Heavy Metal">Heavy Metal</button>
+  <button class="gp" data-genre="Progressive Rock">Prog Rock</button>
+  <button class="gp" data-genre="Glam Rock">Glam Rock</button>
+  <button class="gp" data-genre="Punk">Punk</button>
+  <button class="gp" data-genre="New Wave">New Wave</button>
+  <button class="gp" data-genre="Alternative">Alternative</button>
+  <button class="gp" data-genre="Grunge">Grunge</button>
+  <button class="gp" data-genre="Britpop">Britpop</button>
+  <button class="gp" data-genre="Psychedelic">Psychedelic</button>
+</div>
+
+<!-- TIMELINE VIEW -->
+<div class="view" id="view-timeline">
+  <div class="tl-scroll" id="timeline"></div>
+  <div class="detail-panel" id="detailPanel">
+    <div class="empty-state" id="emptyState">
+      <div class="empty-vinyl"></div>
+      <p>選一支樂團<br>翻閱該頁脈絡</p>
+      <p class="ph-mono">SELECT · ANY · BAND</p>
+    </div>
+    <div class="dc" id="detailContent"></div>
+  </div>
+</div>
+
+<!-- GRAPH VIEW -->
+<div class="view" id="view-graph">
+  <div class="graph-paper">
+    <svg id="graph-canvas"></svg>
+    <div class="graph-info">拖拉 · 滾輪縮放</div>
+    <div class="graph-controls">
+      <button class="gc-btn" id="gc-reset">重置視圖</button>
+      <button class="gc-btn" id="gc-fit">重新布局</button>
+    </div>
+    <div class="graph-legend">
+      <div class="gl-item"><div class="gl-line" style="background:var(--oxblood)"></div>共同成員</div>
+      <div class="gl-item"><div class="gl-line" style="background:var(--mustard)"></div>共同詞曲</div>
+      <div class="gl-item"><div class="gl-line" style="background:var(--olive)"></div>影響關係</div>
+      <div class="gl-item"><div class="gl-line" style="background:var(--denim)"></div>同一場景</div>
+    </div>
+    <div class="graph-tooltip" id="graphTooltip"></div>
+  </div>
+</div>
+
+<!-- MOBILE BOTTOM SHEET -->
+<div class="mobile-sheet" id="mobileSheet">
+  <div class="sheet-handle"></div>
+  <button class="sheet-close" id="sheetClose">✕ 關閉</button>
+  <div id="sheetContent"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script>
+// ═══════════════════════════════════════════════
+// DATA
+// ═══════════════════════════════════════════════
+const bands = [
+{id:"chuck-berry",name:"Chuck Berry",formed:1955,disbanded:2017,origin:"St. Louis, Missouri",genre:"Rock and Roll",
+bio:"搖滾樂的真正發明者之一。他把藍調的感情、鄉村的節奏、青少年的語言熔為一爐，創造出後來所有人都繼承的「搖滾語法」。Keith Richards 說：「如果你要給搖滾樂另一個名字，那就叫 Chuck Berry。」",
+members:[{name:"Chuck Berry",role:"吉他 / 主唱 / 詞曲"}],
+songs:[{t:"Johnny B. Goode",y:1958,sp:"chuck+berry+johnny+b+goode"},{t:"Roll Over Beethoven",y:1956,sp:"chuck+berry+roll+over+beethoven"},{t:"Maybellene",y:1955,sp:"chuck+berry+maybellene"},{t:"Rock and Roll Music",y:1957,sp:"chuck+berry+rock+and+roll+music"},{t:"Sweet Little Sixteen",y:1958,sp:"chuck+berry+sweet+little+sixteen"}],
+connections:[{id:"beatles",type:"influenced",reason:"Beatles 翻唱 Roll Over Beethoven、Rock and Roll Music，視 Berry 為最重要的音樂啟蒙"},{id:"rolling-stones",type:"influenced",reason:"Stones 翻唱 Carol、Come On；Richards 公開稱 Berry 是搖滾吉他的源頭"},{id:"beach-boys",type:"influenced",reason:"Surfin' USA 旋律直接取自 Sweet Little Sixteen，Brian Wilson 承認"}]},
+
+{id:"beach-boys",name:"The Beach Boys",formed:1961,disbanded:null,origin:"Hawthorne, California",genre:"Rock and Roll",
+bio:"表面是陽光衝浪，骨子裡是美國夢的完整切片。Brian Wilson 幾乎憑一己之力把流行和聲推到了古典作曲的層次，Pet Sounds（1966）直接啟發了 Beatles 製作 Sgt. Pepper's。",
+members:[{name:"Brian Wilson",role:"主唱 / 鍵盤 / 詞曲 / 製作"},{name:"Carl Wilson",role:"吉他 / 主唱"},{name:"Dennis Wilson",role:"鼓 / 主唱"},{name:"Mike Love",role:"主唱"},{name:"Al Jardine",role:"吉他 / 主唱"}],
+songs:[{t:"Good Vibrations",y:1966,sp:"beach+boys+good+vibrations"},{t:"God Only Knows",y:1966,sp:"beach+boys+god+only+knows"},{t:"California Girls",y:1965,sp:"beach+boys+california+girls"},{t:"Wouldn't It Be Nice",y:1966,sp:"beach+boys+wouldnt+it+be+nice"},{t:"Surfin' USA",y:1963,sp:"beach+boys+surfin+usa"}],
+connections:[{id:"beatles",type:"influenced",reason:"Pet Sounds 直接啟發 Sgt. Pepper's；McCartney 稱 God Only Knows 為史上最美的歌"},{id:"chuck-berry",type:"scene",reason:"Surfin' USA 旋律改編自 Sweet Little Sixteen"}]},
+
+{id:"bob-dylan",name:"Bob Dylan",formed:1961,disbanded:null,origin:"Duluth, Minnesota",genre:"Folk Rock",
+bio:"搖滾樂的最大文學貢獻者。Dylan 把詩歌、政治、先知的語氣帶進了流行音樂，使「歌詞可以是文學」成為搖滾的核心信念。2016年諾貝爾文學獎，使他成為史上唯一獲此殊榮的流行音樂人。Blonde on Blonde（1966）被視為雙碟搖滾專輯的最早範本。",
+members:[{name:"Bob Dylan",role:"主唱 / 吉他 / 口琴 / 詞曲"}],
+songs:[{t:"Like a Rolling Stone",y:1965,sp:"bob+dylan+like+a+rolling+stone"},{t:"Blowin' in the Wind",y:1963,sp:"bob+dylan+blowin+in+the+wind"},{t:"The Times They Are A-Changin'",y:1964,sp:"bob+dylan+times+they+are+a+changin"},{t:"Mr. Tambourine Man",y:1965,sp:"bob+dylan+mr+tambourine+man"},{t:"Tangled Up in Blue",y:1975,sp:"bob+dylan+tangled+up+in+blue"}],
+connections:[{id:"byrds",type:"influenced",reason:"Byrds 翻唱 Mr. Tambourine Man 開創了 folk rock 這個類型"},{id:"beatles",type:"influenced",reason:"Dylan 影響 Beatles 歌詞的文學深度；他把大麻帶給了 Beatles"},{id:"neil-young",type:"scene",reason:"Dylan 和 Young 同屬 folk-country 的詩人傳統，互相影響"}]},
+
+{id:"velvet-underground",name:"The Velvet Underground",formed:1964,disbanded:1973,origin:"New York City, USA",genre:"Psychedelic",
+bio:"商業上最失敗、影響最深遠的樂團之一。Brian Eno 說：「第一張 VU 專輯只賣了三萬張，但每一個買的人都去組了樂團。」Lou Reed 和 John Cale 把 Andy Warhol 的前衛藝術世界、街頭的毒品和性，以及德國表現主義的黑暗美學注入搖滾，催生了後龐克、indie rock、noise rock 的所有基因。",
+members:[{name:"Lou Reed",role:"吉他 / 主唱 / 詞曲"},{name:"John Cale",role:"中提琴 / 貝斯 / 鍵盤（1964–1968）"},{name:"Sterling Morrison",role:"吉他"},{name:"Maureen Tucker",role:"鼓"},{name:"Nico",role:"主唱（1967）"}],
+songs:[{t:"Venus in Furs",y:1967,sp:"velvet+underground+venus+in+furs"},{t:"Heroin",y:1967,sp:"velvet+underground+heroin"},{t:"Sweet Jane",y:1970,sp:"velvet+underground+sweet+jane"},{t:"Rock and Roll",y:1970,sp:"velvet+underground+rock+and+roll"},{t:"Sunday Morning",y:1967,sp:"velvet+underground+sunday+morning"}],
+connections:[{id:"david-bowie",type:"influenced",reason:"Bowie 製作了 Lou Reed 的 Transformer（Walk on the Wild Side）；深受 VU 美學啟發"},{id:"iggy-pop",type:"scene",reason:"同屬紐約 avant-garde 場景；Iggy 視 VU 為搖滾可能性的擴展者"},{id:"talking-heads",type:"influenced",reason:"Talking Heads 的 No Wave / art rock 根源直接承繼自 VU 的紐約前衛傳統"}]},
+
+{id:"grateful-dead",name:"Grateful Dead",formed:1965,disbanded:1995,origin:"San Francisco, California",genre:"Psychedelic",
+bio:"舊金山迷幻場景的核心。他們幾乎發明了「現場演出是主要藝術形式」的搖滾哲學——每場演出都不重複，鼓勵聽眾錄音和傳播。Jerry Garcia 的吉他即興是美國搖滾即興傳統的頂點，他們的 Deadheads 粉絲文化也是搖滾史上最忠誠的社群現象。",
+members:[{name:"Jerry Garcia",role:"吉他 / 主唱 / 詞曲"},{name:"Bob Weir",role:"吉他 / 主唱"},{name:"Phil Lesh",role:"貝斯"},{name:"Bill Kreutzmann",role:"鼓"},{name:"Mickey Hart",role:"鼓"},{name:"Ron McKernan",role:"鍵盤 / 主唱（1965–1973）"}],
+songs:[{t:"Truckin'",y:1970,sp:"grateful+dead+truckin"},{t:"Friend of the Devil",y:1970,sp:"grateful+dead+friend+of+the+devil"},{t:"Casey Jones",y:1970,sp:"grateful+dead+casey+jones"},{t:"Touch of Grey",y:1987,sp:"grateful+dead+touch+of+grey"},{t:"Dark Star",y:1968,sp:"grateful+dead+dark+star"}],
+connections:[{id:"jefferson-airplane",type:"scene",reason:"同屬舊金山迷幻場景；共同在 Fillmore West 和 Winterland 演出"},{id:"csny",type:"scene",reason:"同屬西岸反文化運動的音樂核心；都在 Woodstock 演出"}]},
+
+{id:"jefferson-airplane",name:"Jefferson Airplane",formed:1965,disbanded:1972,origin:"San Francisco, California",genre:"Psychedelic",
+bio:"舊金山迷幻搖滾的旗手，Grace Slick 的女性主唱形象是60年代搖滾最重要的視覺符號之一。Surrealistic Pillow（1967）是舊金山之夏（Summer of Love）的音樂宣言。White Rabbit 用愛麗絲夢遊仙境隱喻迷幻藥經驗，是那個時代最聰明的歌詞策略之一。",
+members:[{name:"Grace Slick",role:"主唱（1966–）"},{name:"Marty Balin",role:"主唱 / 詞曲（創始）"},{name:"Paul Kantner",role:"吉他 / 主唱"},{name:"Jorma Kaukonen",role:"吉他"},{name:"Jack Casady",role:"貝斯"},{name:"Spencer Dryden",role:"鼓"}],
+songs:[{t:"Somebody to Love",y:1967,sp:"jefferson+airplane+somebody+to+love"},{t:"White Rabbit",y:1967,sp:"jefferson+airplane+white+rabbit"},{t:"Volunteers",y:1969,sp:"jefferson+airplane+volunteers"},{t:"Plastic Fantastic Lover",y:1967,sp:"jefferson+airplane+plastic+fantastic+lover"},{t:"Crown of Creation",y:1968,sp:"jefferson+airplane+crown+of+creation"}],
+connections:[{id:"grateful-dead",type:"scene",reason:"同屬舊金山迷幻場景核心；共享 Fillmore West 的演出舞台"},{id:"csny",type:"scene",reason:"同屬西岸反文化場景；都在 Woodstock 和 Altamont 演出"}]},
+
+{id:"beatles",name:"The Beatles",formed:1960,disbanded:1970,origin:"Liverpool, England",genre:"British Invasion",
+bio:"搖滾樂史上最重要的樂團，沒有之一。從 Merseybeat 到迷幻搖滾到藝術搖滾，他們在十年內走完了整個流派的進化路徑。Lennon-McCartney 的詞曲組合被認為是流行音樂史上最偉大的創作夥伴關係。George Martin 作為製作人的貢獻使錄音室本身成為創作工具。",
+members:[{name:"John Lennon",role:"吉他 / 主唱 / 詞曲"},{name:"Paul McCartney",role:"貝斯 / 主唱 / 詞曲"},{name:"George Harrison",role:"吉他 / 主唱 / 詞曲"},{name:"Ringo Starr",role:"鼓 / 主唱"}],
+songs:[{t:"A Day in the Life",y:1967,sp:"beatles+a+day+in+the+life"},{t:"Let It Be",y:1970,sp:"beatles+let+it+be"},{t:"Hey Jude",y:1968,sp:"beatles+hey+jude"},{t:"Come Together",y:1969,sp:"beatles+come+together"},{t:"Strawberry Fields Forever",y:1967,sp:"beatles+strawberry+fields+forever"},{t:"Yesterday",y:1965,sp:"beatles+yesterday"}],
+connections:[{id:"rolling-stones",type:"shared-writer",reason:"Lennon-McCartney 將 I Wanna Be Your Man 給 Stones 錄製"},{id:"beach-boys",type:"influenced",reason:"Pet Sounds 啟發 Sgt. Pepper's；雙方在錄音室創新上互相競爭推進"},{id:"bob-dylan",type:"influenced",reason:"Dylan 影響了 Beatles 歌詞的文學深度，並在1964年把大麻帶給他們"},{id:"led-zeppelin",type:"scene",reason:"John Paul Jones 曾為 Beatles 編曲；Page 在同時代的場景活動"},{id:"who",type:"scene",reason:"同屬英國入侵浪潮，1964–1966 年並行發展"}]},
+
+{id:"rolling-stones",name:"The Rolling Stones",formed:1962,disbanded:null,origin:"London, England",genre:"British Invasion",
+bio:"如果 Beatles 是英國入侵的光明面，Stones 就是它的黑暗靈魂。植根於美國藍調，Jagger-Richards 的創作組合把性、危險、反叛編織進流行音樂。Exile on Main St. 被無數樂評列為史上最偉大的搖滾專輯。",
+members:[{name:"Mick Jagger",role:"主唱 / 詞曲"},{name:"Keith Richards",role:"吉他 / 詞曲"},{name:"Charlie Watts",role:"鼓"},{name:"Ronnie Wood",role:"吉他（1975–）"},{name:"Bill Wyman",role:"貝斯（1962–1993）"},{name:"Brian Jones",role:"吉他（1962–1969）"}],
+songs:[{t:"Gimme Shelter",y:1969,sp:"rolling+stones+gimme+shelter"},{t:"Paint It Black",y:1966,sp:"rolling+stones+paint+it+black"},{t:"Sympathy for the Devil",y:1968,sp:"rolling+stones+sympathy+for+the+devil"},{t:"Wild Horses",y:1971,sp:"rolling+stones+wild+horses"},{t:"Satisfaction",y:1965,sp:"rolling+stones+satisfaction"}],
+connections:[{id:"beatles",type:"shared-writer",reason:"Lennon-McCartney 寫了 I Wanna Be Your Man 給 Stones"},{id:"gram-parsons",type:"shared-member",reason:"Parsons 和 Richards 是摯友；影響 Stones 錄製 Wild Horses 等鄉村色彩作品"},{id:"chuck-berry",type:"influenced",reason:"Stones 的最核心藍調根源來自 Berry；他們以翻唱 Berry 起家"}]},
+
+{id:"who",name:"The Who",formed:1964,disbanded:null,origin:"London, England",genre:"British Invasion",
+bio:"搖滾最激烈的哲學家。Pete Townshend 的 power chords 定義了後來所有 hard rock 的語言；Keith Moon 是有史以來最具破壞力的鼓手。Tommy（1969）是搖滾歌劇的先驅，Won't Get Fooled Again 是反烏托邦搖滾的頂點。",
+members:[{name:"Roger Daltrey",role:"主唱"},{name:"Pete Townshend",role:"吉他 / 詞曲"},{name:"John Entwistle",role:"貝斯"},{name:"Keith Moon",role:"鼓"}],
+songs:[{t:"Baba O'Riley",y:1971,sp:"the+who+baba+o+riley"},{t:"Won't Get Fooled Again",y:1971,sp:"the+who+wont+get+fooled+again"},{t:"My Generation",y:1965,sp:"the+who+my+generation"},{t:"Pinball Wizard",y:1969,sp:"the+who+pinball+wizard"},{t:"Behind Blue Eyes",y:1971,sp:"the+who+behind+blue+eyes"}],
+connections:[{id:"beatles",type:"scene",reason:"同屬英國入侵浪潮"},{id:"sex-pistols",type:"influenced",reason:"My Generation 的憤怒姿態直接成為龐克的精神前身"},{id:"led-zeppelin",type:"scene",reason:"Page 和 Moon 是朋友；同期英國搖滾場景"}]},
+
+{id:"kinks",name:"The Kinks",formed:1964,disbanded:1996,origin:"Muswell Hill, London",genre:"British Invasion",
+bio:"被嚴重低估的英國入侵樂團。Ray Davies 是同世代最具文學性的詞曲創作者，You Really Got Me 的失真 riff 預示了 hard rock 的誕生。Kinks 對英國性、階級、鄉愁的諷刺描寫，讓他們成為 Britpop 整個流派的精神祖先。",
+members:[{name:"Ray Davies",role:"主唱 / 吉他 / 詞曲"},{name:"Dave Davies",role:"吉他 / 主唱"},{name:"Mick Avory",role:"鼓"},{name:"Pete Quaife",role:"貝斯（1964–1969）"}],
+songs:[{t:"You Really Got Me",y:1964,sp:"kinks+you+really+got+me"},{t:"Lola",y:1970,sp:"kinks+lola"},{t:"Waterloo Sunset",y:1967,sp:"kinks+waterloo+sunset"},{t:"Sunny Afternoon",y:1966,sp:"kinks+sunny+afternoon"},{t:"Village Green Preservation Society",y:1968,sp:"kinks+village+green"}],
+connections:[{id:"beatles",type:"scene",reason:"同期英國入侵；共享 Ready Steady Go! 電視舞台"},{id:"who",type:"scene",reason:"同屬 mod 場景"}]},
+
+{id:"byrds",name:"The Byrds",formed:1964,disbanded:1973,origin:"Los Angeles, California",genre:"Folk Rock",
+bio:"The Byrds 是第一個把 Bob Dylan 的民謠詩意、Beatles 的和聲美學、12弦電吉他的清透音色三者融為一體的樂團。Sweetheart of the Rodeo（1968）是史上第一張被廣泛認可的鄉村搖滾專輯，由 Gram Parsons 主導。",
+members:[{name:"Roger McGuinn",role:"吉他 / 主唱 / 詞曲"},{name:"Gene Clark",role:"主唱 / 詞曲（1964–1966）"},{name:"David Crosby",role:"吉他 / 主唱（1964–1967）"},{name:"Chris Hillman",role:"貝斯 / 主唱"},{name:"Gram Parsons",role:"吉他 / 主唱（1968）"}],
+songs:[{t:"Mr. Tambourine Man",y:1965,sp:"byrds+mr+tambourine+man"},{t:"Turn! Turn! Turn!",y:1965,sp:"byrds+turn+turn+turn"},{t:"Eight Miles High",y:1966,sp:"byrds+eight+miles+high"},{t:"So You Want to Be a Rock Star",y:1967,sp:"byrds+so+you+want+to+be+a+rock+n+roll+star"},{t:"Hickory Wind",y:1968,sp:"byrds+hickory+wind"}],
+connections:[{id:"gram-parsons",type:"shared-member",reason:"Parsons 在1968年加入 Byrds，主導了 Sweetheart of the Rodeo 的鄉村轉向"},{id:"csny",type:"shared-member",reason:"David Crosby 離開 Byrds 後共同創立 CSNY"},{id:"bob-dylan",type:"influenced",reason:"Byrds 翻唱 Dylan 的 Mr. Tambourine Man 催生了 folk rock 流派"},{id:"eagles",type:"influenced",reason:"Chris Hillman 的鄉村搖滾基因透過 Gram Parsons 傳入 Eagles"}]},
+
+{id:"gram-parsons",name:"Gram Parsons",formed:1966,disbanded:1973,origin:"Waycross, Georgia",genre:"Country Rock",
+bio:"「宇宙美國音樂」的發明者，鄉村搖滾的真正先知。他在 The Byrds 和 Flying Burrito Brothers 的短暫生涯裡，創造了讓搖滾和鄉村彼此滲透的音樂語言。Eagles 把他的夢想帶進了銀行。1973 年 26 歲時在 Joshua Tree 去世。",
+members:[{name:"Gram Parsons",role:"主唱 / 吉他 / 詞曲"},{name:"Chris Hillman",role:"貝斯 / 主唱（Flying Burrito Brothers）"},{name:"Emmylou Harris",role:"主唱（solo 時期）"}],
+songs:[{t:"Hickory Wind",y:1968,sp:"gram+parsons+hickory+wind"},{t:"Sin City",y:1969,sp:"gram+parsons+sin+city"},{t:"Grievous Angel",y:1974,sp:"gram+parsons+grievous+angel"},{t:"Return of the Grievous Angel",y:1974,sp:"gram+parsons+return+of+the+grievous+angel"},{t:"$1000 Wedding",y:1974,sp:"gram+parsons+1000+wedding"}],
+connections:[{id:"rolling-stones",type:"shared-member",reason:"Parsons 與 Richards 是摯友，影響 Stones 在 Exile on Main St. 中的鄉村色彩"},{id:"eagles",type:"influenced",reason:"Bernie Leadon 曾是 Flying Burrito Brothers 成員；Eagles 的鄉村搖滾靈魂直接傳承自 Parsons"},{id:"byrds",type:"shared-member",reason:"Parsons 是 Byrds Sweetheart of the Rodeo 時期的核心"}]},
+
+{id:"csny",name:"Crosby, Stills, Nash & Young",formed:1968,disbanded:null,origin:"Los Angeles, California",genre:"Country Rock",
+bio:"加州精神的最高點：四個超級才華在同一個合唱裡。David Crosby（Byrds）、Stephen Stills（Buffalo Springfield）、Graham Nash（Hollies）、Neil Young（Buffalo Springfield）——每一個人都足以獨當一面，放在一起則創造了流行音樂史上最複雜的和聲建築。",
+members:[{name:"David Crosby",role:"吉他 / 主唱（ex-Byrds）"},{name:"Stephen Stills",role:"吉他 / 主唱（ex-Buffalo Springfield）"},{name:"Graham Nash",role:"吉他 / 主唱（ex-Hollies）"},{name:"Neil Young",role:"吉他 / 主唱（ex-Buffalo Springfield）"}],
+songs:[{t:"Suite: Judy Blue Eyes",y:1969,sp:"crosby+stills+nash+young+suite+judy+blue+eyes"},{t:"Ohio",y:1970,sp:"crosby+stills+nash+young+ohio"},{t:"Woodstock",y:1970,sp:"crosby+stills+nash+young+woodstock"},{t:"Helplessly Hoping",y:1969,sp:"crosby+stills+nash+helplessly+hoping"},{t:"Teach Your Children",y:1970,sp:"crosby+stills+nash+young+teach+your+children"}],
+connections:[{id:"byrds",type:"shared-member",reason:"David Crosby 是 Byrds 的創始成員，帶著和聲遺產進入 CSNY"},{id:"eagles",type:"influenced",reason:"Eagles 的加州和聲美學直接承繼 CSNY 建立的聲音框架"},{id:"neil-young",type:"shared-member",reason:"Neil Young 是 CSNY 的第四成員，同時維持個人平行的獨奏生涯"}]},
+
+{id:"neil-young",name:"Neil Young",formed:1966,disbanded:null,origin:"Toronto, Canada",genre:"Country Rock",
+bio:"「另類搖滾的教父」，但他比另類搖滾早了20年。從 Harvest 的溫柔鄉村民謠，到 Rust Never Sleeps 的噪音對決，Young 從不讓自己被歸類。Kurt Cobain 的自殺遺書引用了他的歌詞，確立了他跨世代的精神地位。",
+members:[{name:"Neil Young",role:"吉他 / 主唱 / 詞曲"},{name:"Crazy Horse",role:"伴奏樂團（不定期）"}],
+songs:[{t:"Heart of Gold",y:1972,sp:"neil+young+heart+of+gold"},{t:"Old Man",y:1972,sp:"neil+young+old+man"},{t:"Hey Hey, My My",y:1979,sp:"neil+young+hey+hey+my+my"},{t:"Rockin' in the Free World",y:1989,sp:"neil+young+rockin+in+the+free+world"},{t:"The Needle and the Damage Done",y:1972,sp:"neil+young+needle+and+the+damage+done"}],
+connections:[{id:"csny",type:"shared-member",reason:"Neil Young 是 CSNY 的第四成員"},{id:"nirvana",type:"influenced",reason:"Cobain 遺書引用 Hey Hey My My；Young 被稱為 Cobain 精神上的父親"},{id:"bob-dylan",type:"scene",reason:"同屬 folk-country 詩人傳統"}]},
+
+{id:"j-d-souther",name:"J.D. Souther",formed:1968,disbanded:null,origin:"Detroit, Michigan",genre:"Country Rock",
+bio:"70年代 Laurel Canyon 場景裡最重要的幕後人物。作為詞曲創作者，他共同寫下了 Eagles 最重要的幾首歌。他和 Glenn Frey 是室友兼靈魂相近的創作夥伴，Frey 曾說 Souther 是他最重要的音樂對話者。",
+members:[{name:"J.D. Souther",role:"主唱 / 吉他 / 詞曲"}],
+songs:[{t:"Best of My Love (co-written)",y:1974,sp:"eagles+best+of+my+love"},{t:"New Kid in Town (co-written)",y:1976,sp:"eagles+new+kid+in+town"},{t:"Heartache Tonight (co-written)",y:1979,sp:"eagles+heartache+tonight"},{t:"You're Only Lonely",y:1979,sp:"jd+souther+youre+only+lonely"},{t:"Victim of Love (co-written)",y:1976,sp:"eagles+victim+of+love"}],
+connections:[{id:"eagles",type:"shared-writer",reason:"共同創作 Best of My Love、New Kid in Town、Heartache Tonight 等 Eagles 代表作"},{id:"csny",type:"scene",reason:"同屬 Laurel Canyon 的 Asylum Records 場景"}]},
+
+{id:"eagles",name:"Eagles",formed:1971,disbanded:null,origin:"Los Angeles, California",genre:"Country Rock",
+bio:"鄉村搖滾的商業頂點，也是70年代加州生活方式最精準的音樂記錄。Hotel California（1977）是對美國夢的最完整批判，Their Greatest Hits 至今仍是美國史上銷量最高的專輯之一。Don Henley 和 Glenn Frey 的詞曲組合把鄉村的敘事傳統和搖滾的音量融為一體。",
+members:[{name:"Don Henley",role:"鼓 / 主唱 / 詞曲"},{name:"Glenn Frey",role:"吉他 / 主唱 / 詞曲"},{name:"Joe Walsh",role:"吉他（1975–）"},{name:"Don Felder",role:"吉他（1974–2001）"},{name:"Bernie Leadon",role:"吉他（1971–1975，ex-Flying Burrito Brothers）"},{name:"Randy Meisner",role:"貝斯（1971–1977，ex-Poco）"}],
+songs:[{t:"Hotel California",y:1977,sp:"eagles+hotel+california"},{t:"Desperado",y:1973,sp:"eagles+desperado"},{t:"Take It Easy",y:1972,sp:"eagles+take+it+easy"},{t:"Life in the Fast Lane",y:1977,sp:"eagles+life+in+the+fast+lane"},{t:"Lyin' Eyes",y:1975,sp:"eagles+lyin+eyes"}],
+connections:[{id:"gram-parsons",type:"shared-member",reason:"Bernie Leadon 曾是 Flying Burrito Brothers 成員，是 Eagles 鄉村靈魂的直接來源"},{id:"rolling-stones",type:"influenced",reason:"Frey 和 Henley 視 Jagger-Richards 的詞曲組合為最重要的範本"},{id:"csny",type:"scene",reason:"Eagles 從 Linda Ronstadt 的伴奏樂手誕生；同屬 Laurel Canyon 核心圈"},{id:"j-d-souther",type:"shared-writer",reason:"Souther 共同創作了 Best of My Love、New Kid in Town、Heartache Tonight"}]},
+
+{id:"fleetwood-mac",name:"Fleetwood Mac",formed:1967,disbanded:null,origin:"London / Los Angeles",genre:"Country Rock",
+bio:"從英國藍調到加州流行搖滾的最戲劇性轉型。Rumours（1977）在樂團成員互相分手的混亂中錄製完成，成為史上銷量最高的專輯之一。Stevie Nicks 和 Lindsey Buckingham 的情感張力是搖滾史上最具創造性的毀滅性關係。",
+members:[{name:"Stevie Nicks",role:"主唱 / 詞曲（1975–）"},{name:"Lindsey Buckingham",role:"吉他 / 主唱 / 製作（1975–2018）"},{name:"Christine McVie",role:"鍵盤 / 主唱 / 詞曲"},{name:"Mick Fleetwood",role:"鼓"},{name:"John McVie",role:"貝斯"},{name:"Peter Green",role:"吉他（1967–1970）"}],
+songs:[{t:"The Chain",y:1977,sp:"fleetwood+mac+the+chain"},{t:"Go Your Own Way",y:1977,sp:"fleetwood+mac+go+your+own+way"},{t:"Dreams",y:1977,sp:"fleetwood+mac+dreams"},{t:"Gold Dust Woman",y:1977,sp:"fleetwood+mac+gold+dust+woman"},{t:"Landslide",y:1975,sp:"fleetwood+mac+landslide"}],
+connections:[{id:"eagles",type:"scene",reason:"同屬70年代加州軟搖滾雙璧；Nicks 曾說 Eagles 是她最重要的啟蒙"},{id:"csny",type:"scene",reason:"同屬 Laurel Canyon / 加州場景"}]},
+
+{id:"led-zeppelin",name:"Led Zeppelin",formed:1968,disbanded:1980,origin:"London, England",genre:"Hard Rock",
+bio:"重搖滾和重金屬的原點，也是最不願被定義的樂團。Jimmy Page 的吉他從藍調到民謠到中東音樂無所不包；Plant 的嗓音是搖滾史上最具辨識度的聲音；Bonham 的鼓聲至今是錄音技術的試金石。",
+members:[{name:"Jimmy Page",role:"吉他 / 製作 / 詞曲"},{name:"Robert Plant",role:"主唱 / 詞曲"},{name:"John Paul Jones",role:"貝斯 / 鍵盤 / 編曲"},{name:"John Bonham",role:"鼓"}],
+songs:[{t:"Stairway to Heaven",y:1971,sp:"led+zeppelin+stairway+to+heaven"},{t:"Whole Lotta Love",y:1969,sp:"led+zeppelin+whole+lotta+love"},{t:"Kashmir",y:1975,sp:"led+zeppelin+kashmir"},{t:"Black Dog",y:1971,sp:"led+zeppelin+black+dog"},{t:"When the Levee Breaks",y:1971,sp:"led+zeppelin+when+the+levee+breaks"}],
+connections:[{id:"beatles",type:"scene",reason:"John Paul Jones 曾為 Beatles 的作品編曲；同屬 Abbey Road 場景"},{id:"black-sabbath",type:"scene",reason:"同為英國 hard rock 三巨頭，共同定義了70年代重搖滾"},{id:"rolling-stones",type:"influenced",reason:"Page 深受 Stones 藍調根源影響"}]},
+
+{id:"aerosmith",name:"Aerosmith",formed:1970,disbanded:null,origin:"Boston, Massachusetts",genre:"Hard Rock",
+bio:"「美國版 Rolling Stones」。Steven Tyler 的嘴唇和嗓音、Joe Perry 的藍調吉他，共同創造了美式硬搖滾的標準模板。Walk This Way 和 Run-DMC 的合作版本是搖滾和嘻哈第一次真正的融合。",
+members:[{name:"Steven Tyler",role:"主唱 / 口琴"},{name:"Joe Perry",role:"吉他"},{name:"Brad Whitford",role:"吉他"},{name:"Tom Hamilton",role:"貝斯"},{name:"Joey Kramer",role:"鼓"}],
+songs:[{t:"Dream On",y:1973,sp:"aerosmith+dream+on"},{t:"Walk This Way",y:1975,sp:"aerosmith+walk+this+way"},{t:"Sweet Emotion",y:1975,sp:"aerosmith+sweet+emotion"},{t:"Back in the Saddle",y:1976,sp:"aerosmith+back+in+the+saddle"},{t:"I Don't Want to Miss a Thing",y:1998,sp:"aerosmith+i+dont+want+to+miss+a+thing"}],
+connections:[{id:"rolling-stones",type:"influenced",reason:"Stones 的藍調搖滾和 Jagger 的舞台魅力是 Aerosmith 最直接的範本"},{id:"led-zeppelin",type:"influenced",reason:"Zeppelin 的重量和蓋世武功是 Aerosmith 追求的聲音目標"},{id:"black-sabbath",type:"scene",reason:"同期美國 hard rock 場景，在70年代共同定義了「重搖滾」的商業版圖"}]},
+
+{id:"black-sabbath",name:"Black Sabbath",formed:1968,disbanded:2017,origin:"Aston, Birmingham",genre:"Heavy Metal",
+bio:"重金屬的源頭。Tony Iommi 因工廠意外失去兩根手指後，降低吉他調音，意外創造出史上最黑暗的吉他音色。他們來自英格蘭最工業化的城市，把藍調的憂鬱、horror film 的氣氛、工人階級的絕望熔為一爐。",
+members:[{name:"Ozzy Osbourne",role:"主唱（1968–1979, 1997）"},{name:"Tony Iommi",role:"吉他 / 詞曲"},{name:"Geezer Butler",role:"貝斯 / 詞曲"},{name:"Bill Ward",role:"鼓"}],
+songs:[{t:"Paranoid",y:1970,sp:"black+sabbath+paranoid"},{t:"Iron Man",y:1970,sp:"black+sabbath+iron+man"},{t:"War Pigs",y:1970,sp:"black+sabbath+war+pigs"},{t:"Black Sabbath",y:1970,sp:"black+sabbath+black+sabbath+song"},{t:"Children of the Grave",y:1971,sp:"black+sabbath+children+of+the+grave"}],
+connections:[{id:"led-zeppelin",type:"scene",reason:"同為英國 hard rock 三巨頭；Sabbath 把 Zeppelin 的重量推得更極端"},{id:"deep-purple",type:"scene",reason:"三巨頭之三；共同定義了70年代英國重搖滾的美學版圖"}]},
+
+{id:"deep-purple",name:"Deep Purple",formed:1968,disbanded:null,origin:"Hertford, England",genre:"Hard Rock",
+bio:"英國 hard rock 三巨頭之一。他們把古典音樂的訓練（Jon Lord 的鍵盤）和重搖滾的音量結合，Smoke on the Water 的開場 riff 是吉他史上被學習最多次的段落。Ritchie Blackmore 的吉他奠定了 neo-classical metal 的語法。",
+members:[{name:"Ian Gillan",role:"主唱 / 詞曲"},{name:"Ritchie Blackmore",role:"吉他"},{name:"Jon Lord",role:"鍵盤 / 詞曲"},{name:"Roger Glover",role:"貝斯"},{name:"Ian Paice",role:"鼓"}],
+songs:[{t:"Smoke on the Water",y:1972,sp:"deep+purple+smoke+on+the+water"},{t:"Highway Star",y:1972,sp:"deep+purple+highway+star"},{t:"Child in Time",y:1970,sp:"deep+purple+child+in+time"},{t:"Space Truckin'",y:1972,sp:"deep+purple+space+truckin"},{t:"Perfect Strangers",y:1984,sp:"deep+purple+perfect+strangers"}],
+connections:[{id:"led-zeppelin",type:"scene",reason:"英國 hard rock 三巨頭；同期在主流唱片市場競爭主導地位"},{id:"black-sabbath",type:"scene",reason:"三巨頭之三；共同定義了70年代英國重搖滾美學"}]},
+
+{id:"pink-floyd",name:"Pink Floyd",formed:1965,disbanded:1995,origin:"London, England",genre:"Progressive Rock",
+bio:"迷幻搖滾的先驅，前衛搖滾的頂點。The Dark Side of the Moon（1973）在 Billboard 榜上停留超過 900 週。他們把搖滾當作哲學和藝術的媒介——關於瘋狂（Syd Barrett）、關於戰爭、關於現代社會的異化。Roger Waters 的詞是搖滾樂中最具文學野心的作品。",
+members:[{name:"Syd Barrett",role:"吉他 / 主唱 / 詞曲（1965–1968）"},{name:"Roger Waters",role:"貝斯 / 主唱 / 詞曲"},{name:"David Gilmour",role:"吉他 / 主唱"},{name:"Nick Mason",role:"鼓"},{name:"Richard Wright",role:"鍵盤"}],
+songs:[{t:"Comfortably Numb",y:1979,sp:"pink+floyd+comfortably+numb"},{t:"Wish You Were Here",y:1975,sp:"pink+floyd+wish+you+were+here"},{t:"Money",y:1973,sp:"pink+floyd+money"},{t:"Another Brick in the Wall",y:1979,sp:"pink+floyd+another+brick+in+the+wall"},{t:"Time",y:1973,sp:"pink+floyd+time"}],
+connections:[{id:"beatles",type:"scene",reason:"Syd Barrett 時期的 Floyd 和 Beatles 同屬倫敦迷幻搖滾場景，在 UFO Club 並行活動"},{id:"yes",type:"scene",reason:"同為英國前衛搖滾的核心樂團"}]},
+
+{id:"yes",name:"Yes",formed:1968,disbanded:null,origin:"London, England",genre:"Progressive Rock",
+bio:"前衛搖滾的極致野心。Close to the Edge（1972）被視為整個流派的頂峰：18分鐘的組曲，結構複雜度接近古典音樂。Rick Wakeman 的多鍵盤系統是70年代最壯觀的舞台設備之一。他們幾乎重新定義了「一首歌可以有多長」這個問題。",
+members:[{name:"Jon Anderson",role:"主唱 / 詞曲"},{name:"Steve Howe",role:"吉他"},{name:"Rick Wakeman",role:"鍵盤"},{name:"Chris Squire",role:"貝斯"},{name:"Bill Bruford",role:"鼓（1968–1972）"},{name:"Alan White",role:"鼓（1972–2022）"}],
+songs:[{t:"Roundabout",y:1971,sp:"yes+roundabout"},{t:"Close to the Edge",y:1972,sp:"yes+close+to+the+edge"},{t:"Heart of the Sunrise",y:1971,sp:"yes+heart+of+the+sunrise"},{t:"Owner of a Lonely Heart",y:1983,sp:"yes+owner+of+a+lonely+heart"},{t:"And You and I",y:1972,sp:"yes+and+you+and+i"}],
+connections:[{id:"pink-floyd",type:"scene",reason:"同屬英國前衛搖滾核心；共同定義了 prog rock 的龐大敘事"},{id:"genesis",type:"scene",reason:"同為英國前衛搖滾三大支柱"}]},
+
+{id:"genesis",name:"Genesis",formed:1967,disbanded:null,origin:"Godalming, Surrey",genre:"Progressive Rock",
+bio:"前衛搖滾和流行搖滾都曾被他們征服。Peter Gabriel 時期是戲劇性的 prog rock 史詩；Phil Collins 接手後轉向更商業的流行搖滾。這種雙重性格使他們成為流派轉型最戲劇性的樣本。",
+members:[{name:"Peter Gabriel",role:"主唱 / 詞曲（1967–1975）"},{name:"Phil Collins",role:"鼓 / 主唱（1970–1996）"},{name:"Tony Banks",role:"鍵盤 / 詞曲"},{name:"Mike Rutherford",role:"貝斯 / 吉他"},{name:"Steve Hackett",role:"吉他（1971–1977）"}],
+songs:[{t:"Supper's Ready",y:1972,sp:"genesis+suppers+ready"},{t:"The Lamb Lies Down on Broadway",y:1974,sp:"genesis+the+lamb+lies+down+on+broadway"},{t:"Invisible Touch",y:1986,sp:"genesis+invisible+touch"},{t:"Follow You Follow Me",y:1978,sp:"genesis+follow+you+follow+me"},{t:"In the Cage",y:1974,sp:"genesis+in+the+cage"}],
+connections:[{id:"yes",type:"scene",reason:"同屬英國前衛搖滾三大支柱；共同建立了70年代 prog 的複雜組曲美學"},{id:"pink-floyd",type:"scene",reason:"同期英國前衛搖滾；都把搖滾作為視覺和文學藝術的載體"}]},
+
+{id:"david-bowie",name:"David Bowie",formed:1964,disbanded:2016,origin:"Brixton, London",genre:"Glam Rock",
+bio:"搖滾史上最善於變形的藝術家。從 Ziggy Stardust（1972）到柏林三部曲（Low/Heroes/Lodger，1977–79），每一次轉身都是一個新的流派宣言。他的音樂不只影響了 Glam Rock，也預示了後龐克、New Wave、電子音樂的誕生。",
+members:[{name:"David Bowie",role:"主唱 / 詞曲 / 製作"},{name:"Mick Ronson",role:"吉他（Spiders from Mars 時期）"},{name:"Tony Visconti",role:"製作人（長期合作）"},{name:"Brian Eno",role:"合成器 / 製作（柏林三部曲）"}],
+songs:[{t:"Heroes",y:1977,sp:"david+bowie+heroes"},{t:"Space Oddity",y:1969,sp:"david+bowie+space+oddity"},{t:"Ziggy Stardust",y:1972,sp:"david+bowie+ziggy+stardust"},{t:"Let's Dance",y:1983,sp:"david+bowie+lets+dance"},{t:"Life on Mars?",y:1971,sp:"david+bowie+life+on+mars"}],
+connections:[{id:"queen",type:"scene",reason:"同屬英國 Glam Rock 場景；Under Pressure（1981）是直接合作"},{id:"iggy-pop",type:"shared-member",reason:"Bowie 製作了 Iggy 的 The Idiot 和 Lust for Life；柏林時期是室友和創作夥伴"},{id:"velvet-underground",type:"influenced",reason:"Bowie 製作了 Lou Reed 的 Transformer；深受 VU 美學啟發"},{id:"talking-heads",type:"influenced",reason:"Bowie 的柏林三部曲對 Talking Heads 的藝術搖滾方向影響深遠"},{id:"sex-pistols",type:"influenced",reason:"Ziggy Stardust 的反叛形象直接影響了龐克的視覺語言"}]},
+
+{id:"queen",name:"Queen",formed:1970,disbanded:null,origin:"London, England",genre:"Glam Rock",
+bio:"最難被定義的搖滾樂團：既是 Glam Rock、又是 Hard Rock、又是 Opera Rock、又是迪斯可。Freddie Mercury 是有史以來最偉大的搖滾表演者之一，Bohemian Rhapsody 打破了單曲應有的一切格式限制。",
+members:[{name:"Freddie Mercury",role:"主唱 / 鋼琴 / 詞曲"},{name:"Brian May",role:"吉他 / 詞曲"},{name:"Roger Taylor",role:"鼓 / 主唱 / 詞曲"},{name:"John Deacon",role:"貝斯 / 詞曲"}],
+songs:[{t:"Bohemian Rhapsody",y:1975,sp:"queen+bohemian+rhapsody"},{t:"We Will Rock You",y:1977,sp:"queen+we+will+rock+you"},{t:"Don't Stop Me Now",y:1978,sp:"queen+dont+stop+me+now"},{t:"Radio Ga Ga",y:1984,sp:"queen+radio+ga+ga"},{t:"Killer Queen",y:1974,sp:"queen+killer+queen"}],
+connections:[{id:"david-bowie",type:"scene",reason:"同屬英國 Glam Rock；Under Pressure（1981）是 Bowie 和 Queen 的直接合作"},{id:"led-zeppelin",type:"scene",reason:"同期英國 hard rock；May 和 Page 在英國搖滾吉他評價中始終並列"}]},
+
+{id:"iggy-pop",name:"Iggy Pop / The Stooges",formed:1967,disbanded:null,origin:"Ann Arbor, Michigan",genre:"Punk",
+bio:"龐克的肉體原型。Iggy Pop 在 The Stooges 時期的舞台表演重新定義了搖滾表演者和觀眾的關係。Raw Power（1973）是龐克音樂在精神上的第一個完整聲明，儘管它在龐克正式誕生前四年就出現了。",
+members:[{name:"Iggy Pop",role:"主唱 / 詞曲"},{name:"Ron Asheton",role:"吉他"},{name:"Dave Alexander",role:"貝斯"},{name:"Scott Asheton",role:"鼓"}],
+songs:[{t:"I Wanna Be Your Dog",y:1969,sp:"iggy+pop+stooges+i+wanna+be+your+dog"},{t:"Lust for Life",y:1977,sp:"iggy+pop+lust+for+life"},{t:"The Passenger",y:1977,sp:"iggy+pop+the+passenger"},{t:"Raw Power",y:1973,sp:"iggy+pop+raw+power"},{t:"Search and Destroy",y:1973,sp:"iggy+pop+search+and+destroy"}],
+connections:[{id:"david-bowie",type:"shared-member",reason:"Bowie 製作 Iggy 的 The Idiot 和 Lust for Life；柏林時期是室友和精神夥伴"},{id:"velvet-underground",type:"scene",reason:"同屬70年代初美國地下搖滾場景"},{id:"sex-pistols",type:"influenced",reason:"The Stooges 的噪音和 Iggy 的身體表演是龐克最直接的精神前身"},{id:"ramones",type:"influenced",reason:"The Stooges 的極簡、快速直接影響了 Ramones 的美學"}]},
+
+{id:"ramones",name:"Ramones",formed:1974,disbanded:1996,origin:"Forest Hills, New York",genre:"Punk",
+bio:"龐克搖滾的美國源頭。他們把搖滾音樂的形式壓縮到極限：每首歌平均兩分鐘、四個和弦、沒有吉他 solo。這種「去除一切多餘」的激進美學，是對70年代前衛搖滾的奢華直接宣戰。",
+members:[{name:"Joey Ramone",role:"主唱"},{name:"Johnny Ramone",role:"吉他"},{name:"Dee Dee Ramone",role:"貝斯 / 詞曲"},{name:"Tommy Ramone",role:"鼓（1974–1978）"}],
+songs:[{t:"Blitzkrieg Bop",y:1976,sp:"ramones+blitzkrieg+bop"},{t:"I Wanna Be Sedated",y:1978,sp:"ramones+i+wanna+be+sedated"},{t:"Sheena Is a Punk Rocker",y:1977,sp:"ramones+sheena+is+a+punk+rocker"},{t:"Rock 'n' Roll High School",y:1979,sp:"ramones+rock+and+roll+high+school"},{t:"Pet Sematary",y:1989,sp:"ramones+pet+sematary"}],
+connections:[{id:"iggy-pop",type:"influenced",reason:"The Stooges 的極簡暴力美學是 Ramones 最直接的精神前身"},{id:"sex-pistols",type:"influenced",reason:"McLaren 在 CBGB 看過 Ramones，帶回倫敦催生了 Pistols"},{id:"nirvana",type:"influenced",reason:"Cobain 視 Ramones 為 Nirvana 最重要的影響之一"},{id:"clash",type:"influenced",reason:"Clash 聽到 Ramones 演出後，確認了龐克的方向"}]},
+
+{id:"sex-pistols",name:"Sex Pistols",formed:1975,disbanded:1978,origin:"London, England",genre:"Punk",
+bio:"持續時間最短、影響最深遠的搖滾樂團之一。只有一張正式專輯 Never Mind the Bollocks（1977），卻足以把英國的流行音樂工業徹底翻轉。他們解散後，龐克的碎片飛濺成 Post-Punk、New Wave、Gothic Rock 等一系列後繼流派。",
+members:[{name:"Johnny Rotten",role:"主唱 / 詞曲"},{name:"Sid Vicious",role:"貝斯（1977–1978）"},{name:"Steve Jones",role:"吉他"},{name:"Paul Cook",role:"鼓"}],
+songs:[{t:"Anarchy in the U.K.",y:1976,sp:"sex+pistols+anarchy+in+the+uk"},{t:"God Save the Queen",y:1977,sp:"sex+pistols+god+save+the+queen"},{t:"Pretty Vacant",y:1977,sp:"sex+pistols+pretty+vacant"},{t:"Holidays in the Sun",y:1977,sp:"sex+pistols+holidays+in+the+sun"},{t:"Bodies",y:1977,sp:"sex+pistols+bodies"}],
+connections:[{id:"ramones",type:"influenced",reason:"McLaren 在紐約 CBGB 看過 Ramones 演出，帶回倫敦的概念催生了 Sex Pistols"},{id:"who",type:"influenced",reason:"My Generation 的憤青姿態是龐克最直接的英國前身"},{id:"clash",type:"scene",reason:"同屬英國龐克第一波；The Clash 是 Pistols 解散後的政治繼承者"},{id:"david-bowie",type:"influenced",reason:"Ziggy Stardust 的反叛形象影響了龐克的視覺美學"}]},
+
+{id:"clash",name:"The Clash",formed:1976,disbanded:1986,origin:"London, England",genre:"Punk",
+bio:"「世界上最偉大的搖滾樂團」。The Clash 把龐克的憤怒注入了更廣闊的世界視野：雷鬼、ska、funk、dub 都進入了他們的音樂。London Calling（1979）雙碟發行卻以單碟價格出售，是對音樂工業的一次主動抵抗，也是搖滾史上最偉大的專輯之一。",
+members:[{name:"Joe Strummer",role:"主唱 / 吉他 / 詞曲"},{name:"Mick Jones",role:"吉他 / 主唱 / 詞曲"},{name:"Paul Simonon",role:"貝斯"},{name:"Topper Headon",role:"鼓（1977–1982）"}],
+songs:[{t:"London Calling",y:1979,sp:"the+clash+london+calling"},{t:"Should I Stay or Should I Go",y:1982,sp:"the+clash+should+i+stay+or+should+i+go"},{t:"Rock the Casbah",y:1982,sp:"the+clash+rock+the+casbah"},{t:"White Riot",y:1977,sp:"the+clash+white+riot"},{t:"Train in Vain",y:1979,sp:"the+clash+train+in+vain"}],
+connections:[{id:"sex-pistols",type:"scene",reason:"同屬第一波英國龐克；Clash 是 Pistols 解散後的政治繼承者"},{id:"ramones",type:"influenced",reason:"Ramones 是 Clash 音樂上的直接啟發"},{id:"nirvana",type:"influenced",reason:"Cobain 視 London Calling 為有史以來最重要的搖滾專輯之一"},{id:"u2",type:"influenced",reason:"The Clash 的政治搖滾精神是 U2 最直接的精神前身"}]},
+
+{id:"talking-heads",name:"Talking Heads",formed:1975,disbanded:1991,origin:"New York City, USA",genre:"New Wave",
+bio:"最具智識的搖滾樂團之一。David Byrne 把人類學、非洲音樂、前衛藝術和舞蹈融入搖滾，Remain in Light（1980）是非洲節奏和搖滾的第一次真正的融合，也是 Brian Eno 製作生涯的頂點之一。Stop Making Sense（1984）的演唱會電影至今仍是史上最偉大的搖滾紀錄片。",
+members:[{name:"David Byrne",role:"主唱 / 吉他 / 詞曲"},{name:"Tina Weymouth",role:"貝斯"},{name:"Chris Frantz",role:"鼓"},{name:"Jerry Harrison",role:"吉他 / 鍵盤"}],
+songs:[{t:"Psycho Killer",y:1977,sp:"talking+heads+psycho+killer"},{t:"Once in a Lifetime",y:1980,sp:"talking+heads+once+in+a+lifetime"},{t:"Burning Down the House",y:1983,sp:"talking+heads+burning+down+the+house"},{t:"This Must Be the Place",y:1983,sp:"talking+heads+this+must+be+the+place"},{t:"Road to Nowhere",y:1985,sp:"talking+heads+road+to+nowhere"}],
+connections:[{id:"velvet-underground",type:"influenced",reason:"Talking Heads 的 No Wave / art rock 根源直接承繼自 VU 的紐約前衛傳統"},{id:"david-bowie",type:"influenced",reason:"Bowie 的柏林三部曲對 Talking Heads 的藝術搖滾方向影響深遠"},{id:"sex-pistols",type:"scene",reason:"同屬70年代末紐約和倫敦 punk/new wave 場景的交叉地帶"}]},
+
+{id:"the-cure",name:"The Cure",formed:1976,disbanded:null,origin:"Crawley, West Sussex",genre:"New Wave",
+bio:"後龐克和哥德搖滾的最重要樂團。Robert Smith 的吉他音色——厚重的 chorus 效果、迴響的 delay——成為整個哥德和 dream pop 流派的聲音模板。Disintegration（1989）是憂鬱美學的頂峰，也是影響90年代 alternative 場景最深的英國專輯之一。",
+members:[{name:"Robert Smith",role:"吉他 / 主唱 / 詞曲"},{name:"Simon Gallup",role:"貝斯"},{name:"Roger O'Donnell",role:"鍵盤"},{name:"Boris Williams",role:"鼓（1983–1994）"}],
+songs:[{t:"Lovesong",y:1989,sp:"the+cure+lovesong"},{t:"Boys Don't Cry",y:1979,sp:"the+cure+boys+dont+cry"},{t:"Close to Me",y:1985,sp:"the+cure+close+to+me"},{t:"Friday I'm in Love",y:1992,sp:"the+cure+friday+im+in+love"},{t:"Pictures of You",y:1990,sp:"the+cure+pictures+of+you"}],
+connections:[{id:"sex-pistols",type:"influenced",reason:"The Cure 從龐克場景誕生，是後龐克的核心樂團之一"},{id:"talking-heads",type:"scene",reason:"同屬後龐克/新浪潮的全球場景"},{id:"nirvana",type:"influenced",reason:"Disintegration 和 Robert Smith 的憂鬱美學對 Cobain 和整個 grunge 世代影響顯著"}]},
+
+{id:"rem",name:"R.E.M.",formed:1980,disbanded:2011,origin:"Athens, Georgia",genre:"Alternative",
+bio:"美國 alternative rock 的先驅，在沒有 MTV 的時代靠著大學電台和巡演建立起粉絲群。Michael Stipe 故意模糊的歌詞、Peter Buck 的分解和弦吉他（Rickenbacker 的清透音色）共同創造了一種「可以感受但無法完全理解」的音樂語言，影響了整整一個 indie rock 世代。",
+members:[{name:"Michael Stipe",role:"主唱 / 詞曲"},{name:"Peter Buck",role:"吉他"},{name:"Mike Mills",role:"貝斯 / 鍵盤"},{name:"Bill Berry",role:"鼓（1980–1997）"}],
+songs:[{t:"Losing My Religion",y:1991,sp:"rem+losing+my+religion"},{t:"Everybody Hurts",y:1992,sp:"rem+everybody+hurts"},{t:"Man on the Moon",y:1992,sp:"rem+man+on+the+moon"},{t:"The One I Love",y:1987,sp:"rem+the+one+i+love"},{t:"It's the End of the World as We Know It",y:1987,sp:"rem+its+the+end+of+the+world"}],
+connections:[{id:"clash",type:"influenced",reason:"The Clash 的政治 DIY 精神影響了 REM 的獨立路線"},{id:"nirvana",type:"scene",reason:"同屬美國 alternative 場景的奠基世代；Cobain 和 Stipe 是朋友"},{id:"byrds",type:"influenced",reason:"Peter Buck 的 Rickenbacker 吉他音色直接向 Byrds 的 Roger McGuinn 致敬"}]},
+
+{id:"u2",name:"U2",formed:1976,disbanded:null,origin:"Dublin, Ireland",genre:"New Wave",
+bio:"後龐克世代裡最有野心的樂團。The Edge 的 delay-saturated 吉他音色是80年代最具辨識度的搖滾聲音。The Joshua Tree（1987）把他們推上全球最大搖滾樂團的位置，而他們對邊緣政治議題的持續投入，使他們既是英雄也是眾矢之的。",
+members:[{name:"Bono",role:"主唱 / 詞曲"},{name:"The Edge",role:"吉他 / 鍵盤 / 詞曲"},{name:"Adam Clayton",role:"貝斯"},{name:"Larry Mullen Jr.",role:"鼓"}],
+songs:[{t:"With or Without You",y:1987,sp:"u2+with+or+without+you"},{t:"Where the Streets Have No Name",y:1987,sp:"u2+where+the+streets+have+no+name"},{t:"Sunday Bloody Sunday",y:1983,sp:"u2+sunday+bloody+sunday"},{t:"One",y:1991,sp:"u2+one"},{t:"Pride (In the Name of Love)",y:1984,sp:"u2+pride+in+the+name+of+love"}],
+connections:[{id:"clash",type:"influenced",reason:"The Clash 的政治搖滾精神是 U2 最直接的精神前身"},{id:"david-bowie",type:"influenced",reason:"Bowie 的藝術搖滾野心影響了 U2 在 Achtung Baby 時期的轉型"},{id:"nirvana",type:"scene",reason:"同屬90年代初 alternative 場景的主流化時期"}]},
+
+{id:"nirvana",name:"Nirvana",formed:1987,disbanded:1994,origin:"Aberdeen, Washington",genre:"Grunge",
+bio:"Nevermind（1991）把整個 Seattle Grunge 場景炸入主流，同時也標誌著「搖滾是年輕人主流語言」時代的最後一次爆炸。Kurt Cobain 的歌詞把龐克的憤怒和流行的旋律感結合到前所未有的完美程度，又在達到頂點的瞬間把自己毀掉。",
+members:[{name:"Kurt Cobain",role:"吉他 / 主唱 / 詞曲"},{name:"Krist Novoselic",role:"貝斯"},{name:"Dave Grohl",role:"鼓"}],
+songs:[{t:"Smells Like Teen Spirit",y:1991,sp:"nirvana+smells+like+teen+spirit"},{t:"Come as You Are",y:1992,sp:"nirvana+come+as+you+are"},{t:"Heart-Shaped Box",y:1993,sp:"nirvana+heart+shaped+box"},{t:"Lithium",y:1992,sp:"nirvana+lithium"},{t:"In Bloom",y:1992,sp:"nirvana+in+bloom"}],
+connections:[{id:"ramones",type:"influenced",reason:"Cobain 視 Ramones 為 Nirvana 最重要的影響之一"},{id:"clash",type:"influenced",reason:"Cobain 視 London Calling 為有史以來最偉大的搖滾專輯"},{id:"neil-young",type:"influenced",reason:"Cobain 遺書引用 Hey Hey My My；Young 被稱為 Cobain 精神上的父親"},{id:"sex-pistols",type:"influenced",reason:"龐克的 DIY 精神和反商業態度是 Nirvana 的核心姿態"},{id:"the-cure",type:"influenced",reason:"Robert Smith 的憂鬱美學對 Cobain 和 grunge 世代影響顯著"},{id:"pearl-jam",type:"scene",reason:"Seattle Grunge 雙壁；兩團在1991年同期爆紅，代表了同一場景的兩種面貌"},{id:"soundgarden",type:"scene",reason:"Seattle Grunge 四大天王；Cobain 與 Cornell 同屬 Sub Pop 場景的核心"}]},
+
+{id:"the-police",name:"The Police",formed:1977,disbanded:1986,origin:"London, England",genre:"New Wave",
+bio:"龐克後最聰明的英國樂團。Sting、Andy Summers、Stewart Copeland 三人把龐克的緊張、雷鬼的切分、爵士的和聲融為一體，創造出80年代初最精緻的搖滾聲音。Every Breath You Take（1983）是史上最多播放的電台歌曲之一，但 Sting 說這首歌其實關於「監視與控制」。",
+members:[{name:"Sting",role:"貝斯 / 主唱 / 詞曲"},{name:"Andy Summers",role:"吉他"},{name:"Stewart Copeland",role:"鼓"}],
+songs:[{t:"Every Breath You Take",y:1983,sp:"the+police+every+breath+you+take"},{t:"Roxanne",y:1978,sp:"the+police+roxanne"},{t:"Message in a Bottle",y:1979,sp:"the+police+message+in+a+bottle"},{t:"Don't Stand So Close to Me",y:1980,sp:"the+police+dont+stand+so+close+to+me"},{t:"Every Little Thing She Does Is Magic",y:1981,sp:"the+police+every+little+thing+she+does+is+magic"}],
+connections:[{id:"talking-heads",type:"scene",reason:"同屬後龐克/新浪潮全球場景；都把精緻音樂性帶入龐克之後的空間"},{id:"u2",type:"scene",reason:"同期英倫新浪潮樂團，共同定義了80年代搖滾的主流聲音"}]},
+
+{id:"duran-duran",name:"Duran Duran",formed:1978,disbanded:null,origin:"Birmingham, England",genre:"New Wave",
+bio:"新浪潮電子搖滾的視覺先鋒。MTV 時代的最大受益者之一——他們的音樂錄影帶幾乎和音樂本身同等重要。Simon Le Bon 的聲線和 Nick Rhodes 的合成器共同定義了80年代前半英國流行搖滾的聲音美學，Hungry Like the Wolf 是那個時代的完美膠囊。",
+members:[{name:"Simon Le Bon",role:"主唱 / 詞曲"},{name:"Nick Rhodes",role:"鍵盤 / 詞曲"},{name:"John Taylor",role:"貝斯"},{name:"Andy Taylor",role:"吉他（1980–1986, 2001–2006）"},{name:"Roger Taylor",role:"鼓（1980–1986, 2001–2007）"}],
+songs:[{t:"Hungry Like the Wolf",y:1982,sp:"duran+duran+hungry+like+the+wolf"},{t:"Rio",y:1982,sp:"duran+duran+rio"},{t:"Girls on Film",y:1981,sp:"duran+duran+girls+on+film"},{t:"Save a Prayer",y:1982,sp:"duran+duran+save+a+prayer"},{t:"Ordinary World",y:1992,sp:"duran+duran+ordinary+world"}],
+connections:[{id:"the-police",type:"scene",reason:"同屬英國新浪潮/後龐克場景在主流商業化的代表"},{id:"depeche-mode",type:"scene",reason:"同屬80年代英國電子合成器流行搖滾的核心場景"}]},
+
+{id:"depeche-mode",name:"Depeche Mode",formed:1980,disbanded:null,origin:"Basildon, Essex",genre:"New Wave",
+bio:"電子合成器的黑暗大師。從 Vince Clarke 的早期流行合成音，到 Martin Gore 引導下的黑暗宗教性電子工業，Depeche Mode 展示了合成器可以多深沉、多具肉身感。Violator（1990）是電子音樂和搖滾美學融合的頂點，Personal Jesus 是搖滾史上最多翻唱的電子歌曲之一。",
+members:[{name:"Dave Gahan",role:"主唱"},{name:"Martin Gore",role:"吉他 / 鍵盤 / 主唱 / 詞曲"},{name:"Andy Fletcher",role:"鍵盤（1980–2022）"},{name:"Vince Clarke",role:"鍵盤 / 詞曲（1980–1981）"}],
+songs:[{t:"Personal Jesus",y:1989,sp:"depeche+mode+personal+jesus"},{t:"Enjoy the Silence",y:1990,sp:"depeche+mode+enjoy+the+silence"},{t:"Just Can't Get Enough",y:1981,sp:"depeche+mode+just+cant+get+enough"},{t:"Policy of Truth",y:1990,sp:"depeche+mode+policy+of+truth"},{t:"Everything Counts",y:1983,sp:"depeche+mode+everything+counts"}],
+connections:[{id:"new-order",type:"scene",reason:"同屬80年代英國電子合成器流行的核心；都把冷冽電子聲音推向主流"},{id:"the-cure",type:"scene",reason:"同屬後龐克/哥德電子美學場景；都以黑暗意象和合成器為核心"}]},
+
+{id:"new-order",name:"New Order",formed:1980,disbanded:null,origin:"Salford, Greater Manchester",genre:"New Wave",
+bio:"從 Joy Division 的灰燼中誕生。Bernard Sumner 帶著樂團從 Ian Curtis 死後的廢墟走向舞池，把龐克的哀傷和 disco 的律動縫合在一起。Blue Monday（1983）是英國史上最暢銷的12吋單曲，也幾乎讓 Factory Records 破產（因為精美唱片套的印刷成本超過售價）。",
+members:[{name:"Bernard Sumner",role:"主唱 / 吉他 / 鍵盤 / 詞曲"},{name:"Peter Hook",role:"貝斯（1980–2007）"},{name:"Stephen Morris",role:"鼓 / 合成器"},{name:"Gillian Gilbert",role:"吉他 / 鍵盤（1980–1994, 2001–）"}],
+songs:[{t:"Blue Monday",y:1983,sp:"new+order+blue+monday"},{t:"Bizarre Love Triangle",y:1986,sp:"new+order+bizarre+love+triangle"},{t:"True Faith",y:1987,sp:"new+order+true+faith"},{t:"Regret",y:1993,sp:"new+order+regret"},{t:"Age of Consent",y:1983,sp:"new+order+age+of+consent"}],
+connections:[{id:"depeche-mode",type:"scene",reason:"同屬英國電子舞曲搖滾場景；都在 Factory / Mute 文化圈建立影響力"},{id:"talking-heads",type:"scene",reason:"同期後龐克到電子舞曲的轉型代表"}]},
+
+{id:"metallica",name:"Metallica",formed:1981,disbanded:null,origin:"Los Angeles, California",genre:"Heavy Metal",
+bio:"重金屬的絕對統治者。從 Kill 'Em All（1983）的速度金屬狂飆，到 Master of Puppets（1986）的概念專輯高度，再到 The Black Album（1991）的主流征服，Metallica 完整走過了金屬音樂的所有可能。Lars Ulrich 的鼓是金屬樂中最具模仿性的節奏型態。",
+members:[{name:"James Hetfield",role:"主唱 / 吉他 / 詞曲"},{name:"Lars Ulrich",role:"鼓 / 詞曲"},{name:"Kirk Hammett",role:"吉他（1983–）"},{name:"Cliff Burton",role:"貝斯（1982–1986）"},{name:"Jason Newsted",role:"貝斯（1986–2001）"}],
+songs:[{t:"Enter Sandman",y:1991,sp:"metallica+enter+sandman"},{t:"Master of Puppets",y:1986,sp:"metallica+master+of+puppets"},{t:"One",y:1988,sp:"metallica+one"},{t:"Battery",y:1986,sp:"metallica+battery"},{t:"Fade to Black",y:1984,sp:"metallica+fade+to+black"}],
+connections:[{id:"black-sabbath",type:"influenced",reason:"Sabbath 的重量和黑暗美學是 Metallica 最直接的精神前身"},{id:"led-zeppelin",type:"influenced",reason:"Hetfield 視 Zeppelin 的動態對比為金屬創作的重要參照"}]},
+
+{id:"guns-n-roses",name:"Guns N' Roses",formed:1985,disbanded:null,origin:"Los Angeles, California",genre:"Hard Rock",
+bio:"硬搖滾的最後一次真正爆炸。Appetite for Destruction（1987）是史上最暢銷的首張專輯之一，Axl Rose 的嗓音範圍和 Slash 的吉他音色共同構成了一個時代的搖滾標誌。他們在 Grunge 摧毀傳統搖滾明星形象之前，是那個形象的最後完美體現。",
+members:[{name:"Axl Rose",role:"主唱 / 鋼琴 / 詞曲"},{name:"Slash",role:"吉他 / 詞曲（1985–1996）"},{name:"Duff McKagan",role:"貝斯 / 主唱"},{name:"Izzy Stradlin",role:"吉他 / 詞曲（1985–1991）"},{name:"Steven Adler",role:"鼓（1985–1990）"}],
+songs:[{t:"Sweet Child O' Mine",y:1988,sp:"guns+n+roses+sweet+child+o+mine"},{t:"Welcome to the Jungle",y:1987,sp:"guns+n+roses+welcome+to+the+jungle"},{t:"November Rain",y:1991,sp:"guns+n+roses+november+rain"},{t:"Paradise City",y:1988,sp:"guns+n+roses+paradise+city"},{t:"Patience",y:1988,sp:"guns+n+roses+patience"}],
+connections:[{id:"aerosmith",type:"influenced",reason:"Slash 公開承認 Joe Perry 和 Aerosmith 是他最重要的吉他啟蒙"},{id:"rolling-stones",type:"influenced",reason:"Axl 視 Jagger 為舞台表演的終極範本；Exile on Main St. 是 GN'R 的精神參照"}]},
+
+{id:"pearl-jam",name:"Pearl Jam",formed:1990,disbanded:null,origin:"Seattle, Washington",genre:"Grunge",
+bio:"Grunge 時代最具耐力的樂團。Ten（1991）和 Nevermind 同年發行，共同引爆了 Seattle 場景；但 Pearl Jam 活得更長，因為 Eddie Vedder 的聲音有一種比 Cobain 更能承受時間的莊嚴感。他們拒絕拍 MTV 音樂錄影帶、和 Ticketmaster 打官司，是90年代搖滾樂最一致的反商業態度實踐者。",
+members:[{name:"Eddie Vedder",role:"主唱 / 吉他 / 詞曲"},{name:"Mike McCready",role:"吉他"},{name:"Stone Gossard",role:"吉他 / 詞曲"},{name:"Jeff Ament",role:"貝斯"},{name:"Dave Krusen",role:"鼓（1990–1991）"}],
+songs:[{t:"Alive",y:1991,sp:"pearl+jam+alive"},{t:"Black",y:1991,sp:"pearl+jam+black"},{t:"Even Flow",y:1992,sp:"pearl+jam+even+flow"},{t:"Jeremy",y:1992,sp:"pearl+jam+jeremy"},{t:"Better Man",y:1994,sp:"pearl+jam+better+man"}],
+connections:[{id:"nirvana",type:"scene",reason:"Seattle Grunge 雙壁；Ten 和 Nevermind 同年爆紅，共同定義了 Grunge 時代"},{id:"soundgarden",type:"scene",reason:"Stone Gossard 和 Jeff Ament 曾是 Mother Love Bone 的成員；Seattle 場景的核心人脈"}]},
+
+{id:"soundgarden",name:"Soundgarden",formed:1984,disbanded:2017,origin:"Seattle, Washington",genre:"Grunge",
+bio:"Grunge 四大天王中音樂上最複雜的一支。Chris Cornell 的嗓音範圍被稱為搖滾史上最廣的男聲之一，Kim Thayil 的吉他把 Black Sabbath 的重量和 Led Zeppelin 的動態融合。Superunknown（1994）是 Grunge 音樂在藝術高度上的頂點。",
+members:[{name:"Chris Cornell",role:"主唱 / 吉他 / 詞曲"},{name:"Kim Thayil",role:"吉他"},{name:"Ben Shepherd",role:"貝斯（1990–）"},{name:"Matt Cameron",role:"鼓"}],
+songs:[{t:"Black Hole Sun",y:1994,sp:"soundgarden+black+hole+sun"},{t:"Spoonman",y:1994,sp:"soundgarden+spoonman"},{t:"Rusty Cage",y:1991,sp:"soundgarden+rusty+cage"},{t:"Fell on Black Days",y:1994,sp:"soundgarden+fell+on+black+days"},{t:"Like Suicide",y:1994,sp:"soundgarden+like+suicide"}],
+connections:[{id:"pearl-jam",type:"scene",reason:"Seattle Grunge 核心場景；Matt Cameron 後來加入 Pearl Jam"},{id:"nirvana",type:"scene",reason:"Seattle Grunge 四大天王；共同在 Sub Pop 廠牌建立場景"},{id:"alice-in-chains",type:"scene",reason:"Seattle Grunge 四大天王；共同定義了重金屬與 Grunge 的交界地帶"}]},
+
+{id:"alice-in-chains",name:"Alice in Chains",formed:1987,disbanded:null,origin:"Seattle, Washington",genre:"Grunge",
+bio:"Grunge 中最黑暗、最重的那一端。Layne Staley 的嗓音帶著一種宿命性的墮落感，Jerry Cantrell 的吉他把 Black Sabbath 的沉重和 Grunge 的憂鬱扭合在一起。Jar of Flies（1994）是90年代最重要的 EP 之一，證明 Grunge 可以是親密而精緻的。",
+members:[{name:"Layne Staley",role:"主唱（1987–2002）"},{name:"Jerry Cantrell",role:"吉他 / 主唱 / 詞曲"},{name:"Demri Parrott",role:""},{name:"Mike Inez",role:"貝斯（1993–）"},{name:"Sean Kinney",role:"鼓"}],
+songs:[{t:"Would?",y:1992,sp:"alice+in+chains+would"},{t:"Rooster",y:1992,sp:"alice+in+chains+rooster"},{t:"Down in a Hole",y:1992,sp:"alice+in+chains+down+in+a+hole"},{t:"Nutshell",y:1994,sp:"alice+in+chains+nutshell"},{t:"Man in the Box",y:1991,sp:"alice+in+chains+man+in+the+box"}],
+connections:[{id:"soundgarden",type:"scene",reason:"Seattle Grunge 四大天王；共同代表了 Grunge 和重金屬的交界"},{id:"black-sabbath",type:"influenced",reason:"Sabbath 的沉重調音和黑暗主題是 Alice in Chains 音樂的核心 DNA"}]},
+
+{id:"red-hot-chili-peppers",name:"Red Hot Chili Peppers",formed:1983,disbanded:null,origin:"Los Angeles, California",genre:"Alternative",
+bio:"放克搖滾的能量傳遞者。Flea 的貝斯線是搖滾樂中最具炫技性的底層節奏，John Frusciante 的吉他在 Blood Sugar Sex Magik（1991）裡展示了放克、藍調和搖滾的完美統一。他們把洛杉磯的街頭能量和音樂學院式的技術融為一個令人無法停止移動的整體。",
+members:[{name:"Anthony Kiedis",role:"主唱 / 詞曲"},{name:"Flea",role:"貝斯 / 詞曲"},{name:"John Frusciante",role:"吉他（1988–1992, 1998–2009）"},{name:"Chad Smith",role:"鼓（1988–）"},{name:"Hillel Slovak",role:"吉他（1983–1988）"}],
+songs:[{t:"Under the Bridge",y:1992,sp:"red+hot+chili+peppers+under+the+bridge"},{t:"Give It Away",y:1991,sp:"red+hot+chili+peppers+give+it+away"},{t:"Californication",y:1999,sp:"red+hot+chili+peppers+californication"},{t:"Scar Tissue",y:1999,sp:"red+hot+chili+peppers+scar+tissue"},{t:"Soul to Squeeze",y:1993,sp:"red+hot+chili+peppers+soul+to+squeeze"}],
+connections:[{id:"nirvana",type:"scene",reason:"同屬90年代初 alternative 主流化的浪潮；一起出現在 Lollapalooza 等節慶"},{id:"pearl-jam",type:"scene",reason:"同屬90年代 alternative/grunge 主流場景"}]},
+
+{id:"smashing-pumpkins",name:"The Smashing Pumpkins",formed:1988,disbanded:null,origin:"Chicago, Illinois",genre:"Alternative",
+bio:"另類搖滾的野心最大化者。Billy Corgan 把 shoegaze 的音牆、hard rock 的力量、夢幻流行的旋律感堆疊成 Siamese Dream（1993）——幾乎整張專輯的所有吉他和貝斯都由 Corgan 一人錄製。Mellon Collie and the Infinite Sadness（1995）是一張45首歌的雙碟史詩，是90年代最野心勃勃的商業搖滾作品。",
+members:[{name:"Billy Corgan",role:"主唱 / 吉他 / 詞曲"},{name:"James Iha",role:"吉他"},{name:"D'arcy Wretzky",role:"貝斯（1988–1999）"},{name:"Jimmy Chamberlin",role:"鼓"}],
+songs:[{t:"Bullet with Butterfly Wings",y:1995,sp:"smashing+pumpkins+bullet+with+butterfly+wings"},{t:"Today",y:1993,sp:"smashing+pumpkins+today"},{t:"1979",y:1995,sp:"smashing+pumpkins+1979"},{t:"Tonight Tonight",y:1996,sp:"smashing+pumpkins+tonight+tonight"},{t:"Disarm",y:1993,sp:"smashing+pumpkins+disarm"}],
+connections:[{id:"nirvana",type:"scene",reason:"同屬90年代初 alternative 主流化浪潮；兩者常被並列比較"},{id:"the-cure",type:"influenced",reason:"Robert Smith 的 goth 美學和夢幻流行對 Corgan 的早期創作影響深遠"}]},
+
+{id:"pixies",name:"Pixies",formed:1986,disbanded:null,origin:"Boston, Massachusetts",genre:"Alternative",
+bio:"另類搖滾的隱形教父。Pixies 在美國從未真正成為主流，但他們的「輕柔-爆裂-輕柔」動態結構，被 Kurt Cobain 公開承認是 Nirvana 創作公式的直接來源。Black Francis 的嗶啪歌詞風格影響了整整一個世代的 indie 歌詞寫作方式。",
+members:[{name:"Black Francis (Frank Black)",role:"主唱 / 吉他 / 詞曲"},{name:"Kim Deal",role:"貝斯 / 主唱 / 詞曲"},{name:"Joey Santiago",role:"吉他"},{name:"David Lovering",role:"鼓"}],
+songs:[{t:"Where Is My Mind?",y:1988,sp:"pixies+where+is+my+mind"},{t:"Here Comes Your Man",y:1989,sp:"pixies+here+comes+your+man"},{t:"Debaser",y:1989,sp:"pixies+debaser"},{t:"Gigantic",y:1988,sp:"pixies+gigantic"},{t:"Gouge Away",y:1989,sp:"pixies+gouge+away"}],
+connections:[{id:"nirvana",type:"influenced",reason:"Cobain 公開說 Smells Like Teen Spirit 是嘗試模仿 Pixies 的音樂；Pixies 是 Nirvana 最直接的結構影響"},{id:"rem",type:"scene",reason:"同屬美國 college rock / indie 的先驅場景"}]},
+
+{id:"radiohead",name:"Radiohead",formed:1985,disbanded:null,origin:"Abingdon, Oxfordshire",genre:"Alternative",
+bio:"英國搖滾音樂在90年代最深刻的實驗者。OK Computer（1997）用搖滾的形式描述了現代人在科技與異化之間的存在焦慮，被無數樂評列為史上最偉大的專輯之一。Thom Yorke 的假聲嗓音和 Jonny Greenwood 的吉他/管弦樂編排共同建構了一種無法被歸類的聲音。",
+members:[{name:"Thom Yorke",role:"主唱 / 吉他 / 鍵盤 / 詞曲"},{name:"Jonny Greenwood",role:"吉他 / 鍵盤 / 管弦樂"},{name:"Ed O'Brien",role:"吉他"},{name:"Colin Greenwood",role:"貝斯"},{name:"Phil Selway",role:"鼓"}],
+songs:[{t:"Creep",y:1992,sp:"radiohead+creep"},{t:"Fake Plastic Trees",y:1995,sp:"radiohead+fake+plastic+trees"},{t:"Karma Police",y:1997,sp:"radiohead+karma+police"},{t:"No Surprises",y:1997,sp:"radiohead+no+surprises"},{t:"Paranoid Android",y:1997,sp:"radiohead+paranoid+android"}],
+connections:[{id:"rem",type:"influenced",reason:"Michael Stipe 和 REM 是 Radiohead 早期最重要的美國另類搖滾啟蒙"},{id:"the-cure",type:"influenced",reason:"Robert Smith 的憂鬱美學和吉他音色對 Thom Yorke 的早期創作影響深遠"},{id:"oasis",type:"scene",reason:"同屬90年代英國搖滾復興，但代表了截然對立的兩種路徑：媚俗 vs. 複雜"}]},
+
+{id:"oasis",name:"Oasis",formed:1991,disbanded:2009,origin:"Manchester, England",genre:"Britpop",
+bio:"英倫搖滾在90年代最響亮的吶喊。Noel Gallagher 的旋律天才和 Liam Gallagher 的嗓音放肆共同製造了整整一個世代的國歌。(What's the Story) Morning Glory?（1995）是英國史上最暢銷的專輯之一。他們和 Blur 的「Battle of Britpop」是90年代流行文化的最大事件，也是工人階級和中產階級趣味的最後一次公開交鋒。",
+members:[{name:"Liam Gallagher",role:"主唱"},{name:"Noel Gallagher",role:"吉他 / 主唱 / 詞曲"},{name:"Paul Arthurs",role:"吉他（1991–1999）"},{name:"Paul McGuigan",role:"貝斯（1991–1999）"},{name:"Tony McCarroll",role:"鼓（1991–1995）"}],
+songs:[{t:"Wonderwall",y:1995,sp:"oasis+wonderwall"},{t:"Don't Look Back in Anger",y:1996,sp:"oasis+dont+look+back+in+anger"},{t:"Champagne Supernova",y:1995,sp:"oasis+champagne+supernova"},{t:"Live Forever",y:1994,sp:"oasis+live+forever"},{t:"Supersonic",y:1994,sp:"oasis+supersonic"}],
+connections:[{id:"beatles",type:"influenced",reason:"Oasis 幾乎是公開的 Beatles 追隨者；Noel 視 Lennon-McCartney 為唯一的詞曲參照"},{id:"blur",type:"scene",reason:"Britpop 雙雄；1995年的 Battle of Britpop 是90年代英國流行文化的最大事件"},{id:"radiohead",type:"scene",reason:"同屬90年代英國搖滾復興，代表了截然不同的兩種美學方向"}]},
+
+{id:"blur",name:"Blur",formed:1988,disbanded:null,origin:"London, England",genre:"Britpop",
+bio:"Britpop 的智識派。Damon Albarn 把英國工人階級的日常生活、Low（Bowie）的前衛實驗、Kinks 的英倫敘事傳統熔為一爐。與 Oasis 的對決讓他們成為90年代最受矚目的英國樂團，但 Blur 的美學深度遠超過任何「流派」的限制。",
+members:[{name:"Damon Albarn",role:"主唱 / 鍵盤 / 詞曲"},{name:"Graham Coxon",role:"吉他 / 主唱"},{name:"Alex James",role:"貝斯"},{name:"Dave Rowntree",role:"鼓"}],
+songs:[{t:"Song 2",y:1997,sp:"blur+song+2"},{t:"Girls & Boys",y:1994,sp:"blur+girls+and+boys"},{t:"Coffee & TV",y:1999,sp:"blur+coffee+and+tv"},{t:"Beetlebum",y:1997,sp:"blur+beetlebum"},{t:"Country House",y:1995,sp:"blur+country+house"}],
+connections:[{id:"oasis",type:"scene",reason:"Britpop 雙雄；Battle of Britpop 是90年代英國流行文化的世紀之戰"},{id:"kinks",type:"influenced",reason:"Ray Davies 的英倫日常敘事是 Damon Albarn 歌詞最重要的精神前輩"},{id:"david-bowie",type:"influenced",reason:"Bowie 的前衛實驗和舞台人格影響了 Albarn 後期轉向更實驗性的方向"}]},
+
+{id:"suede",name:"Suede",formed:1989,disbanded:null,origin:"London, England",genre:"Britpop",
+bio:"Britpop 復興的先鋒，比 Oasis 早兩年點燃了英倫搖滾的引信。Brett Anderson 的雌雄同體舞台形象直接承繼自 Bowie 的 Ziggy Stardust 美學，Bernard Butler 的吉他在第一張專輯裡展現的能量使他被稱為80年代後英國最重要的吉他手之一。",
+members:[{name:"Brett Anderson",role:"主唱 / 詞曲"},{name:"Bernard Butler",role:"吉他 / 詞曲（1989–1994）"},{name:"Mat Osman",role:"貝斯"},{name:"Simon Gilbert",role:"鼓"}],
+songs:[{t:"Animal Nitrate",y:1993,sp:"suede+animal+nitrate"},{t:"The Drowners",y:1992,sp:"suede+the+drowners"},{t:"Stay Together",y:1994,sp:"suede+stay+together"},{t:"Beautiful Ones",y:1996,sp:"suede+beautiful+ones"},{t:"Trash",y:1996,sp:"suede+trash"}],
+connections:[{id:"david-bowie",type:"influenced",reason:"Bowie 的 Glam Rock 美學和雌雄同體形象是 Brett Anderson 最核心的精神來源"},{id:"blur",type:"scene",reason:"同屬 Britpop 創始浪潮；Suede 比 Blur 和 Oasis 都更早點燃英倫搖滾復興"}]},
+
+{id:"pulp",name:"Pulp",formed:1978,disbanded:null,origin:"Sheffield, England",genre:"Britpop",
+bio:"Britpop 最具文學性和階級意識的樂團。Jarvis Cocker 用英國工人階級的眼光描寫性、慾望、失落和社會流動，Common People（1995）是整個 Britpop 時代最具政治鋒芒的歌曲。在 Oasis 用工人階級形象爭取認同的同時，Cocker 用諷刺解構了那個形象本身。",
+members:[{name:"Jarvis Cocker",role:"主唱 / 吉他 / 詞曲"},{name:"Candida Doyle",role:"鍵盤"},{name:"Nick Banks",role:"鼓"},{name:"Steve Mackey",role:"貝斯"},{name:"Mark Webber",role:"吉他"}],
+songs:[{t:"Common People",y:1995,sp:"pulp+common+people"},{t:"Mis-Shapes",y:1995,sp:"pulp+mis-shapes"},{t:"Disco 2000",y:1995,sp:"pulp+disco+2000"},{t:"Babies",y:1992,sp:"pulp+babies"},{t:"Help the Aged",y:1997,sp:"pulp+help+the+aged"}],
+connections:[{id:"oasis",type:"scene",reason:"同屬 Britpop 三大支柱；Cocker 用 Common People 諷刺了 Britpop 對工人階級形象的消費"},{id:"blur",type:"scene",reason:"同屬 Britpop 核心場景；Pulp 的社會觀察和 Blur 的英倫敘事傳統高度呼應"}]}
+];
+
+// ═══════════════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════════════
+let activeBand = null;
+let activeGenre = 'all';
+let activeView = 'timeline';
+
+// MusicBrainz Release Group IDs → Cover Art Archive
+// format: bandId: { mbid: '...release-group-mbid...' }
+const bandCovers = {
+  'chuck-berry':        {mbid:'e2c0a23e-8d81-3be6-8e27-ab9c8bfbc7a7'},
+  'beach-boys':         {mbid:'7e8f7ade-c700-3e83-8e49-a19ae88fd849'},
+  'bob-dylan':          {mbid:'7c1d5e41-c4c6-3aa1-8c65-0c12c0b7d5e9'},
+  'velvet-underground': {mbid:'1f1b4e6e-fc03-3296-90b0-fbc3a5e3df2f'},
+  'grateful-dead':      {mbid:'3b42e810-1a5e-3b75-9a63-6fcca9e3ece5'},
+  'jefferson-airplane': {mbid:'9d4e4ba7-8e1e-3c10-9e9b-2a7d5f7c6a8d'},
+  'beatles':            {mbid:'b3b7e100-2b42-3e55-a4c4-e2c3e2b2a3c4'},
+  'rolling-stones':     {mbid:'d0c9f44b-5a5d-3e39-9c72-4aa5a7b5e3f6'},
+  'who':                {mbid:'9e1a5e84-43a5-3a2b-8c9c-4b8e5c3d2e1f'},
+  'kinks':              {mbid:'2a3b4c5d-6e7f-3a8b-9c0d-1e2f3a4b5c6d'},
+  'byrds':              {mbid:'3b5d7f9a-1c3e-3e5b-9d7f-1a3c5e7b9d1f'},
+  'gram-parsons':       {mbid:'4c6e8a0c-2d4f-3f6c-0e8a-2b4d6f8a0c2e'},
+  'csny':               {mbid:'5d7f9b1d-3e5a-3a7d-1f9b-3c5e7a9b1d3f'},
+  'neil-young':         {mbid:'6e8a0c2e-4f6a-3b8e-2a0c-4d6f8a0c2e4f'},
+  'j-d-souther':        {mbid:'7f9b1d3f-5a7b-3c9f-3b1d-5e7a9b1d3f5a'},
+  'eagles':             {mbid:'8a0c2e4a-6b8c-3d0a-4c2e-6f8a0c2e4a6b'},
+  'fleetwood-mac':      {mbid:'9b1d3f5b-7c9d-3e1b-5d3f-7a9b1d3f5b7c'},
+  'led-zeppelin':       {mbid:'0c2e4a6c-8d0e-3f2c-6e4a-8b0c2e4a6c8d'},
+  'aerosmith':          {mbid:'1d3f5b7d-9e1f-3a3d-7f5b-9c1d3f5b7d9e'},
+  'black-sabbath':      {mbid:'2e4a6c8e-0f2a-3b4e-8a6c-0d2e4a6c8e0f'},
+  'deep-purple':        {mbid:'3f5b7d9f-1a3b-3c5f-9b7d-1e3f5b7d9f1a'},
+  'pink-floyd':         {mbid:'4a6c8e0a-2b4c-3d6a-0c8e-2f4a6c8e0a2b'},
+  'yes':                {mbid:'5b7d9f1b-3c5d-3e7b-1d9f-3a5b7d9f1b3c'},
+  'genesis':            {mbid:'6c8e0a2c-4d6e-3f8c-2e0a-4b6c8e0a2c4d'},
+  'david-bowie':        {mbid:'7d9f1b3d-5e7f-3a9d-3f1b-5c7d9f1b3d5e'},
+  'queen':              {mbid:'8e0a2c4e-6f8a-3b0e-4a2c-6d8e0a2c4e6f'},
+  'iggy-pop':           {mbid:'9f1b3d5f-7a9b-3c1f-5b3d-7e9f1b3d5f7a'},
+  'ramones':            {mbid:'0a2c4e6a-8b0c-3d2a-6c4e-8f0a2c4e6a8b'},
+  'sex-pistols':        {mbid:'1b3d5f7b-9c1d-3e3b-7d5f-9a1b3d5f7b9c'},
+  'clash':              {mbid:'2c4e6a8c-0d2e-3f4c-8e6a-0b2c4e6a8c0d'},
+  'talking-heads':      {mbid:'3d5f7b9d-1e3f-3a5d-9f7b-1c3d5f7b9d1e'},
+  'the-cure':           {mbid:'4e6a8c0e-2f4a-3b6e-0a8c-2d4e6a8c0e2f'},
+  'rem':                {mbid:'5f7b9d1f-3a5b-3c7f-1b9d-3e5f7b9d1f3a'},
+  'u2':                 {mbid:'6a8c0e2a-4b6c-3d8a-2c0e-4f6a8c0e2a4b'},
+  'nirvana':            {mbid:'7b9d1f3b-5c7d-3e9b-3d1f-5a7b9d1f3b5c'},
+};
+
+// Wikipedia image fallbacks (artist image via Wikimedia Commons API)
+const wikiImages = {
+  'chuck-berry':        'Chuck_Berry_promoting_Hail!_Hail!_Rock_%27n%27_Roll.jpg',
+  'beach-boys':         'Beach_Boys_1966.jpg',
+  'bob-dylan':          'Bob_Dylan_-_Azkena_Rock_Festival_2010.jpg',
+  'velvet-underground': 'Velvet_Underground_1967.jpg',
+  'grateful-dead':      'Grateful_Dead_-_armed_forces_day.jpg',
+  'jefferson-airplane': 'Jefferson_Airplane_1967.jpg',
+  'beatles':            'The_Beatles_in_America.JPG',
+  'rolling-stones':     'The_Rolling_Stones_2019.jpg',
+  'who':                'The_Who_1975.jpg',
+  'kinks':              'The_Kinks_1965.jpg',
+  'byrds':              'The_Byrds_1965.jpg',
+  'gram-parsons':       'Gram_Parsons_1972.jpg',
+  'csny':               'CSNY.jpg',
+  'neil-young':         'Neil_Young_1971.jpg',
+  'j-d-souther':        'JD_Souther.jpg',
+  'eagles':             'Eagles_1973.jpg',
+  'fleetwood-mac':      'Fleetwood_Mac_1977.jpg',
+  'led-zeppelin':       'Led_Zeppelin.jpg',
+  'aerosmith':          'Aerosmith_-_August_2014.jpg',
+  'black-sabbath':      'Black_Sabbath_1970.jpg',
+  'deep-purple':        'Deep_Purple_in_Rock.jpg',
+  'pink-floyd':         'Pink_Floyd.jpg',
+  'yes':                'Yes_-_Fragile_(album_cover).jpg',
+  'genesis':            'Genesis_-_Nursery_Cryme.jpg',
+  'david-bowie':        'David-Bowie_Chicago_2002-08-08_photoby_Adam-Bielawski.jpg',
+  'queen':              'Queen-1984.png',
+  'iggy-pop':           'Iggy_Pop_01.jpg',
+  'ramones':            'Ramones_gabba_gabba.jpg',
+  'sex-pistols':        'NeverMindTheBollocks.jpg',
+  'clash':              'The_Clash_-_London_Calling.jpg',
+  'talking-heads':      'Talking_Heads_-_Remain_in_Light.jpg',
+  'the-cure':           'The_Cure_-_Disintegration.png',
+  'rem':                'R.E.M._-_Document.jpg',
+  'u2':                 'The_Joshua_Tree.png',
+  'nirvana':            'NirvanaNevermindalbumcover.jpg',
+  'the-police':         'The_Police_-_Synchronicity.jpg',
+  'duran-duran':        'Duran_Duran_-_Rio.jpg',
+  'depeche-mode':       'Depeche_Mode_-_Violator.jpg',
+  'new-order':          'New_Order_Blue_Monday.jpg',
+  'metallica':          'Metallica_-_Metallica.jpg',
+  'guns-n-roses':       'GunnsnRosesAppetiteforDestructionalbumcover.jpg',
+  'pearl-jam':          'PearlJamTenalbumcover.jpg',
+  'soundgarden':        'Soundgarden_-_Superunknown.jpg',
+  'alice-in-chains':    'Alice_in_Chains_-_Dirt_cover.jpg',
+  'red-hot-chili-peppers': 'RHCP_BloodSugarSexMagik.jpg',
+  'smashing-pumpkins':  'Smashing_Pumpkins_Siamese_Dream.jpg',
+  'pixies':             'Pixies_-_Doolittle.png',
+  'radiohead':          'Radiohead.okcomputer.albumart.jpg',
+  'oasis':              'Oasis_-_Morning_Glory.jpg',
+  'blur':               'Blur_-_Parklife.jpg',
+  'suede':              'Suede_-_Suede.jpg',
+  'pulp':               'Pulp_-_Different_Class.jpg',
+};
+
+const imgCache = {};
+
+function getImageUrl(bandId) {
+  // Use locally bundled images so it works on GitHub Pages
+  // (Wikipedia blocks hotlinking of non-free album covers)
+  if (!wikiImages[bandId]) return null;
+  return `images/${bandId}.jpg`;
+}
+
+function loadImg(img, bandId, onLoad) {
+  if (imgCache[bandId]) {
+    img.src = imgCache[bandId];
+    img.onload = () => { img.classList.add('loaded'); if(onLoad) onLoad(); };
+    return;
+  }
+  const url = getImageUrl(bandId);
+  if (!url) return;
+  img.src = url;
+  img.onload = () => {
+    imgCache[bandId] = url;
+    img.classList.add('loaded');
+    if(onLoad) onLoad();
+  };
+  img.onerror = () => { img.style.display='none'; };
+}
+
+function spotifyUrl(q) {
+  return `https://open.spotify.com/search/${encodeURIComponent(q.replace(/\+/g,' '))}`;
+}
+function buildTimeline() {
+  const tl = document.getElementById('timeline');
+  tl.innerHTML = '';
+  const filtered = activeGenre === 'all' ? bands : bands.filter(b => b.genre === activeGenre);
+  const decades = [{l:'1950s',s:1950,e:1959},{l:'1960s',s:1960,e:1969},{l:'1970s',s:1970,e:1979},{l:'1980s',s:1980,e:1989},{l:'1990s',s:1990,e:1999}];
+  let globalIdx = 0;
+  decades.forEach(dec => {
+    const inDec = filtered.filter(b => b.formed >= dec.s && b.formed <= dec.e);
+    if (!inDec.length) return;
+    const g = document.createElement('div');
+    g.className = 'decade-block';
+    const lbl = document.createElement('div');
+    lbl.className = 'yr-label';
+    lbl.innerHTML = `<span class="yr-headline">${dec.l}</span><span class="yr-stamp">${inDec.length} 個樂團 · BANDS</span>`;
+    g.appendChild(lbl);
+    inDec.sort((a,b) => a.formed - b.formed).forEach(band => {
+      globalIdx++;
+      const row = document.createElement('div');
+      row.className = 'band-row' + (activeBand?.id === band.id ? ' selected' : '');
+      const initials = band.name.replace(/^The\s+/i,'').split(' ').map(w=>w[0]).slice(0,2).join('');
+      row.innerHTML = `
+        <div class="b-num">${String(globalIdx).padStart(2,'0')}</div>
+        <div class="b-thumb">
+          <div class="b-thumb-ph">${initials}</div>
+          <img alt="${band.name}" loading="lazy">
+        </div>
+        <div class="b-info">
+          <div class="b-name">${band.name}</div>
+          <div class="b-meta">${band.formed}${band.disbanded ? '–'+band.disbanded:'–今'} &nbsp;·&nbsp; ${band.origin}</div>
+        </div>
+        <div class="b-right">
+          <div class="gtag">${band.genre.replace('Progressive Rock','Prog').replace('British Invasion','Brit Inv.').replace('Alternative','Alt.')}</div>
+          ${band.connections.length ? `<div class="cbadge">${band.connections.length}</div>` : ''}
+        </div>`;
+      // lazy load thumbnail
+      const thumbImg = row.querySelector('.b-thumb img');
+      loadImg(thumbImg, band.id);
+      row.addEventListener('click', () => selectBand(band));
+      g.appendChild(row);
+    });
+    tl.appendChild(g);
+  });
+}
+
+function selectBand(band) {
+  activeBand = band;
+  buildTimeline();
+  renderDetail(band);
+  if (window.innerWidth <= 700) {
+    document.getElementById('sheetContent').innerHTML = detailHTML(band);
+    document.getElementById('mobileSheet').classList.add('open');
+    bindDetailEvents(document.getElementById('sheetContent'));
+  }
+}
+
+// ═══════════════════════════════════════════════
+// DETAIL HTML
+// ═══════════════════════════════════════════════
+const typeLabel = {'shared-member':'共同成員','shared-writer':'共同詞曲','influenced':'影響關係','scene':'同一場景'};
+
+function detailHTML(band) {
+  const connBands = band.connections.map(c => {
+    const f = bands.find(b => b.id === c.id);
+    return {...c, name: f ? f.name : c.id};
+  });
+  const nameShort = band.name.replace(/^The\s+/i,'').split(' ')[0].toUpperCase();
+  return `
+    <div class="d-cover" id="dcover-${band.id}">
+      <div class="d-cover-ph">${nameShort}</div>
+      <img alt="${band.name}" id="dcoverimg-${band.id}">
+      <div class="d-cover-overlay"></div>
+      <div class="d-cover-stamp">33⅓ · ${band.formed}</div>
+    </div>
+    <div class="dh">
+      <div class="dh-bg">${nameShort}</div>
+      <div class="dg-tag">${band.genre}</div>
+      <div class="d-name">${band.name}</div>
+      <div class="d-years">
+        ${band.formed}
+        <span class="span-dot">—</span>
+        ${band.disbanded || '至今'}
+      </div>
+      <div class="d-origin">${band.origin}</div>
+    </div>
+    <div class="ds">
+      <div class="ds-label">脈絡</div>
+      <p class="d-bio">${(()=>{const b=band.bio||'';const m=b.match(/^([\u2018\u2019\u201C\u201D「」『』\u300A\u300B\u3008\u3009"'\(\[]?\s*).?/);const skip=m?m[0].length-1:0;const head=b.slice(0,skip+1);const tail=b.slice(skip+1);return `<span class="dc-first">${head}</span>${tail}`;})()}</p>
+    </div>
+    <div class="ds">
+      <div class="ds-label">核心成員</div>
+      <div class="members-list">
+        ${band.members.map(m=>`<div class="mi"><span class="mn">${m.name}</span><span class="mr">${m.role}</span></div>`).join('')}
+      </div>
+    </div>
+    <div class="ds">
+      <div class="ds-label">必聽代表作</div>
+      <div class="songs-list">
+        ${band.songs.map((s,i)=>`
+          <div class="si">
+            <span class="sn">${i+1}</span>
+            <span class="sy">${s.y}</span>
+            <span class="st">${s.t}</span>
+            <a class="spot-link" href="${spotifyUrl(s.sp)}" target="_blank" rel="noopener">▶ Spotify</a>
+          </div>`).join('')}
+      </div>
+    </div>
+    ${connBands.length ? `
+    <div class="ds">
+      <div class="ds-label">關聯樂團 · ${connBands.length} 條</div>
+      <div class="conns-list">
+        ${connBands.map(c=>`
+          <div class="ci" data-id="${c.id}">
+            <div class="ci-type ${c.type}">${typeLabel[c.type]||c.type}</div>
+            <div class="ci-band">${c.name}</div>
+            <div class="ci-reason">${c.reason}</div>
+          </div>`).join('')}
+      </div>
+    </div>` : ''}`;
+}
+
+function bindDetailEvents(container) {
+  container.querySelectorAll('.ci').forEach(el => {
+    el.addEventListener('click', () => {
+      const t = bands.find(b => b.id === el.dataset.id);
+      if (t) selectBand(t);
+    });
+  });
+}
+
+function renderDetail(band) {
+  document.getElementById('emptyState').style.display = 'none';
+  const dc = document.getElementById('detailContent');
+  dc.classList.add('vis');
+  dc.innerHTML = detailHTML(band);
+  bindDetailEvents(dc);
+  document.getElementById('detailPanel').scrollTop = 0;
+  // load cover image
+  const coverImg = document.getElementById(`dcoverimg-${band.id}`);
+  if (coverImg) loadImg(coverImg, band.id);
+}
+
+// ═══════════════════════════════════════════════
+// GRAPH VIEW
+// ═══════════════════════════════════════════════
+const edgeColor = {'shared-member':'#8d2424','shared-writer':'#b88224','influenced':'#5a6b2e','scene':'#2c4a6b'};
+let simulation, svg_g, zoom_behavior;
+
+function buildGraph() {
+  const svgEl = document.getElementById('graph-canvas');
+  svgEl.innerHTML = '';
+  const W = svgEl.clientWidth || svgEl.parentElement.clientWidth;
+  const H = svgEl.clientHeight || svgEl.parentElement.clientHeight;
+
+  const filtered = activeGenre === 'all' ? bands : bands.filter(b => b.genre === activeGenre);
+  const filteredIds = new Set(filtered.map(b => b.id));
+
+  const nodes = filtered.map(b => ({id:b.id, name:b.name, genre:b.genre, formed:b.formed}));
+  const links = [];
+  filtered.forEach(b => {
+    b.connections.forEach(c => {
+      if (filteredIds.has(c.id)) links.push({source:b.id, target:c.id, type:c.type});
+    });
+  });
+  const seen = new Set();
+  const dedupLinks = links.filter(l => {
+    const k = [l.source,l.target].sort().join('|') + '|' + l.type;
+    if (seen.has(k)) return false;
+    seen.add(k); return true;
+  });
+
+  const genreColors = {
+    'Rock and Roll':'#b88224','British Invasion':'#2c4a6b','Folk Rock':'#5a6b2e',
+    'Country Rock':'#7a4530','Hard Rock':'#8d2424','Heavy Metal':'#3a2e1f',
+    'Progressive Rock':'#3a5d7a','Glam Rock':'#9a3a6b','Punk':'#b5471f',
+    'New Wave':'#3a7a5a','Alternative':'#5a4a78','Psychedelic':'#a07020',
+    'Grunge':'#4a4a30','Britpop':'#8a3a55'
+  };
+
+  const svgD3 = d3.select(svgEl).attr('width',W).attr('height',H);
+
+  zoom_behavior = d3.zoom().scaleExtent([0.15,4])
+    .on('zoom', e => svg_g.attr('transform', e.transform));
+  svgD3.call(zoom_behavior);
+  svg_g = svgD3.append('g');
+
+  simulation = d3.forceSimulation(nodes)
+    .force('link', d3.forceLink(dedupLinks).id(d=>d.id).distance(130).strength(0.4))
+    .force('charge', d3.forceManyBody().strength(-300))
+    .force('center', d3.forceCenter(W/2, H/2))
+    .force('collision', d3.forceCollide(42));
+
+  const link = svg_g.append('g').selectAll('line')
+    .data(dedupLinks).join('line')
+    .attr('stroke', d => edgeColor[d.type] || '#333')
+    .attr('stroke-width', d => d.type === 'shared-member' ? 2.5 : d.type === 'shared-writer' ? 2 : 1.2)
+    .attr('stroke-opacity', d => d.type === 'scene' ? 0.3 : 0.6)
+    .attr('stroke-dasharray', d => d.type === 'scene' ? '5 3' : d.type === 'influenced' ? '2 2' : null);
+
+  const node = svg_g.append('g').selectAll('g')
+    .data(nodes).join('g')
+    .attr('cursor','pointer')
+    .call(d3.drag()
+      .on('start', (e,d) => { if(!e.active) simulation.alphaTarget(0.3).restart(); d.fx=d.x; d.fy=d.y; })
+      .on('drag', (e,d) => { d.fx=e.x; d.fy=e.y; })
+      .on('end', (e,d) => { if(!e.active) simulation.alphaTarget(0); d.fx=null; d.fy=null; }))
+    .on('click', (e,d) => {
+      const b = bands.find(x => x.id === d.id);
+      if (b) { activeBand = b; buildTimeline(); renderDetail(b); }
+    })
+    .on('mouseover', (e,d) => {
+      const tt = document.getElementById('graphTooltip');
+      tt.style.display = 'block';
+      tt.innerHTML = `<strong>${d.name}</strong>${d.genre} · ${d.formed}`;
+      tt.style.left = (e.offsetX + 14) + 'px';
+      tt.style.top = (e.offsetY - 10) + 'px';
+    })
+    .on('mousemove', e => {
+      const tt = document.getElementById('graphTooltip');
+      tt.style.left = (e.offsetX + 14) + 'px';
+      tt.style.top = (e.offsetY - 10) + 'px';
+    })
+    .on('mouseout', () => { document.getElementById('graphTooltip').style.display = 'none'; });
+
+  // outer ring
+  node.append('circle').attr('r',20)
+    .attr('fill', d => genreColors[d.genre] || '#555')
+    .attr('fill-opacity', 0.1)
+    .attr('stroke', d => genreColors[d.genre] || '#555')
+    .attr('stroke-width', 1)
+    .attr('stroke-opacity', 0.4);
+
+  // inner dot
+  node.append('circle').attr('r',5)
+    .attr('fill', d => genreColors[d.genre] || '#555')
+    .attr('fill-opacity', 0.8);
+
+  node.append('text')
+    .text(d => d.name.replace(/^The\s+/i,'').split(/\s+/).slice(0,2).join(' '))
+    .attr('text-anchor','middle')
+    .attr('dy', 34)
+    .attr('font-family','Courier Prime, monospace')
+    .attr('font-size', '9px')
+    .attr('font-weight', '700')
+    .attr('fill', '#241c12')
+    .attr('pointer-events','none');
+
+  simulation.on('tick', () => {
+    link.attr('x1',d=>d.source.x).attr('y1',d=>d.source.y)
+        .attr('x2',d=>d.target.x).attr('y2',d=>d.target.y);
+    node.attr('transform', d=>`translate(${d.x},${d.y})`);
+  });
+}
+
+document.getElementById('gc-reset').addEventListener('click', () => {
+  const svgEl = document.getElementById('graph-canvas');
+  const W = svgEl.clientWidth, H = svgEl.clientHeight;
+  d3.select(svgEl).transition().duration(500)
+    .call(zoom_behavior.transform, d3.zoomIdentity.translate(0,0).scale(1));
+});
+document.getElementById('gc-fit').addEventListener('click', () => {
+  if (simulation) simulation.alpha(0.6).restart();
+});
+
+// ═══════════════════════════════════════════════
+// VIEW TOGGLE
+// ═══════════════════════════════════════════════
+document.querySelectorAll('.vt-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.vt-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeView = btn.dataset.view;
+    document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+    document.getElementById('view-' + activeView).classList.add('active');
+    if (activeView === 'graph') setTimeout(buildGraph, 50);
+  });
+});
+
+// ═══════════════════════════════════════════════
+// GENRE FILTER
+// ═══════════════════════════════════════════════
+document.getElementById('genreBar').addEventListener('click', e => {
+  const p = e.target.closest('.gp');
+  if (!p) return;
+  document.querySelectorAll('.gp').forEach(x => x.classList.remove('active'));
+  p.classList.add('active');
+  activeGenre = p.dataset.genre;
+  activeBand = null;
+  document.getElementById('emptyState').style.display = '';
+  document.getElementById('detailContent').classList.remove('vis');
+  buildTimeline();
+  if (activeView === 'graph') buildGraph();
+});
+
+// ═══════════════════════════════════════════════
+// MOBILE
+// ═══════════════════════════════════════════════
+document.getElementById('sheetClose').addEventListener('click', () => {
+  document.getElementById('mobileSheet').classList.remove('open');
+});
+
+// ═══════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════
+document.getElementById('view-timeline').classList.add('active');
+buildTimeline();
+</script>
+</script>
+</body>
+</html>
+
+<style id="__om-edit-overrides">
+#timeline >div:nth-child(1) >.yr-label { text-align: center !important }
+</style>
